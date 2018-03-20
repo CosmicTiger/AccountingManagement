@@ -26,6 +26,7 @@ public class MainMenu extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
 
         calculatorTxtField = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -37,13 +38,14 @@ public class MainMenu extends javax.swing.JFrame {
         loadButton = new javax.swing.JButton();
         deleteButtton = new javax.swing.JButton();
         jComboBox1 = new javax.swing.JComboBox<>();
-        jPanel1 = new javax.swing.JPanel();
+        accountingEntityPanel = new javax.swing.JPanel();
         _enterpriseLBL = new javax.swing.JLabel();
-        enterpriseTxtField = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
-        jTextField1 = new javax.swing.JTextField();
+        entityIDTextField = new javax.swing.JTextField();
+        entityIDlabel = new javax.swing.JLabel();
+        entityDateLabel = new javax.swing.JLabel();
+        estateResultDayStatement = new com.toedter.calendar.JDateChooser();
+        entityNameTextField = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         _codeLabel = new javax.swing.JLabel();
         codeTxtField = new javax.swing.JTextField();
@@ -51,7 +53,8 @@ public class MainMenu extends javax.swing.JFrame {
         account_Label = new javax.swing.JLabel();
         accValue_Label = new javax.swing.JLabel();
         valueTxtField = new javax.swing.JTextField();
-        jMenuBar1 = new javax.swing.JMenuBar();
+        jLabel1 = new javax.swing.JLabel();
+        AppMenuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenu6 = new javax.swing.JMenu();
@@ -69,7 +72,7 @@ public class MainMenu extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(1000, 750));
         getContentPane().setLayout(null);
         getContentPane().add(calculatorTxtField);
-        calculatorTxtField.setBounds(110, 140, 430, 20);
+        calculatorTxtField.setBounds(120, 40, 430, 20);
 
         worktable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -111,7 +114,7 @@ public class MainMenu extends javax.swing.JFrame {
         jScrollPane1.setViewportView(worktable);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(50, 170, 560, 380);
+        jScrollPane1.setBounds(60, 70, 560, 380);
 
         newButton.setText("New");
         jSplitPane1.setLeftComponent(newButton);
@@ -138,51 +141,115 @@ public class MainMenu extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jComboBox1);
-        jComboBox1.setBounds(50, 140, 56, 20);
+        jComboBox1.setBounds(60, 40, 56, 20);
+
+        accountingEntityPanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        accountingEntityPanel.setLayout(new java.awt.GridBagLayout());
 
         _enterpriseLBL.setText("Enterprise");
-        jPanel1.add(_enterpriseLBL);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 1;
+        accountingEntityPanel.add(_enterpriseLBL, gridBagConstraints);
 
-        enterpriseTxtField.addActionListener(new java.awt.event.ActionListener() {
+        entityIDTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                enterpriseTxtFieldActionPerformed(evt);
+                entityIDTextFieldActionPerformed(evt);
             }
         });
-        jPanel1.add(enterpriseTxtField);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 2;
+        accountingEntityPanel.add(entityIDTextField, gridBagConstraints);
 
-        jLabel1.setText("jLabel1");
-        jPanel1.add(jLabel1);
+        entityIDlabel.setText("jLabel1");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 2;
+        accountingEntityPanel.add(entityIDlabel, gridBagConstraints);
 
-        jLabel2.setText("jLabel2");
-        jPanel1.add(jLabel2);
-        jPanel1.add(jDateChooser1);
+        entityDateLabel.setText("jLabel2");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 3;
+        accountingEntityPanel.add(entityDateLabel, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 3;
+        accountingEntityPanel.add(estateResultDayStatement, gridBagConstraints);
 
-        jTextField1.setText("jTextField1");
-        jPanel1.add(jTextField1);
+        entityNameTextField.setText("jTextField1");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 1;
+        accountingEntityPanel.add(entityNameTextField, gridBagConstraints);
 
-        getContentPane().add(jPanel1);
-        jPanel1.setBounds(630, 190, 150, 100);
+        jLabel3.setText("jLabel3");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 2;
+        accountingEntityPanel.add(jLabel3, gridBagConstraints);
+
+        getContentPane().add(accountingEntityPanel);
+        accountingEntityPanel.setBounds(670, 40, 150, 100);
+
+        jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel2.setLayout(new java.awt.GridBagLayout());
 
         _codeLabel.setText("Code:");
-        jPanel2.add(_codeLabel);
-        jPanel2.add(codeTxtField);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 1;
+        jPanel2.add(_codeLabel, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 4;
+        jPanel2.add(codeTxtField, gridBagConstraints);
 
         accountTxtField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 accountTxtFieldActionPerformed(evt);
             }
         });
-        jPanel2.add(accountTxtField);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 4;
+        jPanel2.add(accountTxtField, gridBagConstraints);
 
         account_Label.setText("Account: ");
-        jPanel2.add(account_Label);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 2;
+        jPanel2.add(account_Label, gridBagConstraints);
 
         accValue_Label.setText("Account Value: ");
-        jPanel2.add(accValue_Label);
-        jPanel2.add(valueTxtField);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 3;
+        jPanel2.add(accValue_Label, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.gridwidth = 4;
+        jPanel2.add(valueTxtField, gridBagConstraints);
+
+        jLabel1.setText("jLabel1");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 4;
+        jPanel2.add(jLabel1, gridBagConstraints);
 
         getContentPane().add(jPanel2);
-        jPanel2.setBounds(660, 80, 120, 100);
+        jPanel2.setBounds(670, 160, 150, 100);
+
+        AppMenuBar.setBackground(new java.awt.Color(255, 255, 255));
+        AppMenuBar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        AppMenuBar.setOpaque(false);
+        AppMenuBar.setPreferredSize(new java.awt.Dimension(180, 25));
 
         fileMenu.setText("File");
 
@@ -201,7 +268,7 @@ public class MainMenu extends javax.swing.JFrame {
 
         fileMenu.add(jMenu6);
 
-        jMenuBar1.add(fileMenu);
+        AppMenuBar.add(fileMenu);
 
         editMenu.setText("Edit");
 
@@ -213,18 +280,18 @@ public class MainMenu extends javax.swing.JFrame {
         });
         editMenu.add(jMenuItem2);
 
-        jMenuBar1.add(editMenu);
+        AppMenuBar.add(editMenu);
 
         viewMenu.setText("View");
-        jMenuBar1.add(viewMenu);
+        AppMenuBar.add(viewMenu);
 
         windowMenu.setText("Window");
-        jMenuBar1.add(windowMenu);
+        AppMenuBar.add(windowMenu);
 
         helpMenu.setText("Help");
-        jMenuBar1.add(helpMenu);
+        AppMenuBar.add(helpMenu);
 
-        setJMenuBar(jMenuBar1);
+        setJMenuBar(AppMenuBar);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -233,10 +300,10 @@ public class MainMenu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
-    private void enterpriseTxtFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enterpriseTxtFieldActionPerformed
+    private void entityIDTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_entityIDTextFieldActionPerformed
         // TODO add your handling code here:
         
-    }//GEN-LAST:event_enterpriseTxtFieldActionPerformed
+    }//GEN-LAST:event_entityIDTextFieldActionPerformed
 
     private void accountTxtFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accountTxtFieldActionPerformed
         // TODO add your handling code here:
@@ -286,33 +353,35 @@ public class MainMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuBar AppMenuBar;
     private javax.swing.JLabel _codeLabel;
     private javax.swing.JLabel _enterpriseLBL;
     private javax.swing.JLabel accValue_Label;
     private javax.swing.JTextField accountTxtField;
     private javax.swing.JLabel account_Label;
+    private javax.swing.JPanel accountingEntityPanel;
     private javax.swing.JTextField calculatorTxtField;
     private javax.swing.JTextField codeTxtField;
     private javax.swing.JButton deleteButtton;
     private javax.swing.JMenu editMenu;
-    private javax.swing.JTextField enterpriseTxtField;
+    private javax.swing.JLabel entityDateLabel;
+    private javax.swing.JTextField entityIDTextField;
+    private javax.swing.JLabel entityIDlabel;
+    private javax.swing.JTextField entityNameTextField;
+    private com.toedter.calendar.JDateChooser estateResultDayStatement;
     private javax.swing.JMenu fileMenu;
     private javax.swing.JMenu helpMenu;
     private javax.swing.JComboBox<String> jComboBox1;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JMenu jMenu6;
-    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JSplitPane jSplitPane2;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JButton loadButton;
     private javax.swing.JButton newButton;
     private javax.swing.JButton saveButton;
