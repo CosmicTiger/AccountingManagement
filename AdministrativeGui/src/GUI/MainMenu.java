@@ -45,7 +45,7 @@ public class MainMenu extends javax.swing.JFrame {
         entityDateLabel = new javax.swing.JLabel();
         estateResultDayStatement = new com.toedter.calendar.JDateChooser();
         entityNameTextField = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
+        entityTitleLabel = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         _codeLabel = new javax.swing.JLabel();
         codeTxtField = new javax.swing.JTextField();
@@ -53,7 +53,7 @@ public class MainMenu extends javax.swing.JFrame {
         account_Label = new javax.swing.JLabel();
         accValue_Label = new javax.swing.JLabel();
         valueTxtField = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
+        accountsTitleLabel = new javax.swing.JLabel();
         AppMenuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -72,7 +72,7 @@ public class MainMenu extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(1000, 750));
         getContentPane().setLayout(null);
         getContentPane().add(calculatorTxtField);
-        calculatorTxtField.setBounds(130, 30, 430, 20);
+        calculatorTxtField.setBounds(130, 40, 430, 20);
 
         worktable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -134,14 +134,14 @@ public class MainMenu extends javax.swing.JFrame {
         getContentPane().add(jSplitPane2);
         jSplitPane2.setBounds(650, 380, 179, 25);
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "f(x):", " " }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
             }
         });
         getContentPane().add(jComboBox1);
-        jComboBox1.setBounds(60, 40, 56, 20);
+        jComboBox1.setBounds(70, 40, 56, 20);
 
         accountingEntityPanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         accountingEntityPanel.setLayout(new java.awt.GridBagLayout());
@@ -162,13 +162,13 @@ public class MainMenu extends javax.swing.JFrame {
         gridBagConstraints.gridy = 2;
         accountingEntityPanel.add(entityIDTextField, gridBagConstraints);
 
-        entityIDlabel.setText("jLabel1");
+        entityIDlabel.setText("ID:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 2;
         accountingEntityPanel.add(entityIDlabel, gridBagConstraints);
 
-        entityDateLabel.setText("jLabel2");
+        entityDateLabel.setText("Date:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 3;
@@ -177,19 +177,17 @@ public class MainMenu extends javax.swing.JFrame {
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 3;
         accountingEntityPanel.add(estateResultDayStatement, gridBagConstraints);
-
-        entityNameTextField.setText("jTextField1");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 1;
         accountingEntityPanel.add(entityNameTextField, gridBagConstraints);
 
-        jLabel3.setText("jLabel3");
+        entityTitleLabel.setText("Accounting Entity");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.gridwidth = 2;
-        accountingEntityPanel.add(jLabel3, gridBagConstraints);
+        accountingEntityPanel.add(entityTitleLabel, gridBagConstraints);
 
         getContentPane().add(accountingEntityPanel);
         accountingEntityPanel.setBounds(670, 40, 150, 100);
@@ -236,12 +234,12 @@ public class MainMenu extends javax.swing.JFrame {
         gridBagConstraints.gridwidth = 4;
         jPanel2.add(valueTxtField, gridBagConstraints);
 
-        jLabel1.setText("jLabel1");
+        accountsTitleLabel.setText("Accounts");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.gridwidth = 4;
-        jPanel2.add(jLabel1, gridBagConstraints);
+        jPanel2.add(accountsTitleLabel, gridBagConstraints);
 
         getContentPane().add(jPanel2);
         jPanel2.setBounds(670, 160, 150, 100);
@@ -360,6 +358,7 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JTextField accountTxtField;
     private javax.swing.JLabel account_Label;
     private javax.swing.JPanel accountingEntityPanel;
+    private javax.swing.JLabel accountsTitleLabel;
     private javax.swing.JTextField calculatorTxtField;
     private javax.swing.JTextField codeTxtField;
     private javax.swing.JButton deleteButtton;
@@ -368,12 +367,11 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JTextField entityIDTextField;
     private javax.swing.JLabel entityIDlabel;
     private javax.swing.JTextField entityNameTextField;
+    private javax.swing.JLabel entityTitleLabel;
     private com.toedter.calendar.JDateChooser estateResultDayStatement;
     private javax.swing.JMenu fileMenu;
     private javax.swing.JMenu helpMenu;
     private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JMenu jMenu6;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
