@@ -72,7 +72,7 @@ public class MainMenu extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(1000, 750));
         getContentPane().setLayout(null);
         getContentPane().add(calculatorTxtField);
-        calculatorTxtField.setBounds(120, 40, 430, 20);
+        calculatorTxtField.setBounds(130, 30, 430, 20);
 
         worktable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
