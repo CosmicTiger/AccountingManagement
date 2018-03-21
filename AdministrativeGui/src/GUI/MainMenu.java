@@ -72,7 +72,7 @@ public class MainMenu extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(1000, 750));
         getContentPane().setLayout(null);
         getContentPane().add(calculatorTxtField);
-        calculatorTxtField.setBounds(130, 40, 430, 20);
+        calculatorTxtField.setBounds(120, 20, 430, 20);
 
         worktable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -141,17 +141,19 @@ public class MainMenu extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jComboBox1);
-        jComboBox1.setBounds(40, 20, 56, 20);
+        jComboBox1.setBounds(60, 20, 56, 20);
 
         accountingEntityPanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         accountingEntityPanel.setLayout(new java.awt.GridBagLayout());
 
+        _enterpriseLBL.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         _enterpriseLBL.setText("Enterprise");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 1;
         accountingEntityPanel.add(_enterpriseLBL, gridBagConstraints);
 
+        entityIDTextField.setPreferredSize(new java.awt.Dimension(100, 20));
         entityIDTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 entityIDTextFieldActionPerformed(evt);
@@ -162,35 +164,48 @@ public class MainMenu extends javax.swing.JFrame {
         gridBagConstraints.gridy = 2;
         accountingEntityPanel.add(entityIDTextField, gridBagConstraints);
 
+        entityIDlabel.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         entityIDlabel.setText("ID:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 2;
         accountingEntityPanel.add(entityIDlabel, gridBagConstraints);
 
+        entityDateLabel.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         entityDateLabel.setText("Date:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 3;
         accountingEntityPanel.add(entityDateLabel, gridBagConstraints);
+
+        entityNameTextField.setPreferredSize(new java.awt.Dimension(100, 20));
+        entityNameTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                entityNameTextFieldActionPerformed(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 1;
         accountingEntityPanel.add(entityNameTextField, gridBagConstraints);
 
+        entityTitleLabel.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         entityTitleLabel.setText("Accounting Entity");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.gridwidth = 2;
         accountingEntityPanel.add(entityTitleLabel, gridBagConstraints);
+
+        jDateChooser1.setMinimumSize(new java.awt.Dimension(100, 20));
+        jDateChooser1.setPreferredSize(new java.awt.Dimension(100, 20));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 3;
         accountingEntityPanel.add(jDateChooser1, gridBagConstraints);
 
         getContentPane().add(accountingEntityPanel);
-        accountingEntityPanel.setBounds(670, 40, 150, 100);
+        accountingEntityPanel.setBounds(660, 50, 210, 130);
 
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel2.setLayout(new java.awt.GridBagLayout());
@@ -200,12 +215,15 @@ public class MainMenu extends javax.swing.JFrame {
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 1;
         jPanel2.add(_codeLabel, gridBagConstraints);
+
+        codeTxtField.setPreferredSize(new java.awt.Dimension(100, 20));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 1;
         gridBagConstraints.gridwidth = 4;
         jPanel2.add(codeTxtField, gridBagConstraints);
 
+        accountTxtField.setPreferredSize(new java.awt.Dimension(100, 20));
         accountTxtField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 accountTxtFieldActionPerformed(evt);
@@ -228,6 +246,8 @@ public class MainMenu extends javax.swing.JFrame {
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 3;
         jPanel2.add(accValue_Label, gridBagConstraints);
+
+        valueTxtField.setPreferredSize(new java.awt.Dimension(100, 20));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 3;
@@ -242,7 +262,7 @@ public class MainMenu extends javax.swing.JFrame {
         jPanel2.add(accountsTitleLabel, gridBagConstraints);
 
         getContentPane().add(jPanel2);
-        jPanel2.setBounds(670, 160, 150, 100);
+        jPanel2.setBounds(660, 200, 210, 120);
 
         AppMenuBar.setBackground(new java.awt.Color(255, 255, 255));
         AppMenuBar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -314,6 +334,10 @@ public class MainMenu extends javax.swing.JFrame {
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void entityNameTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_entityNameTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_entityNameTextFieldActionPerformed
 
     /**
      * @param args the command line arguments
