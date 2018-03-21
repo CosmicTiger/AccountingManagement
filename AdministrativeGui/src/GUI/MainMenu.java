@@ -141,7 +141,7 @@ public class MainMenu extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jComboBox1);
-        jComboBox1.setBounds(70, 40, 56, 20);
+        jComboBox1.setBounds(40, 20, 56, 20);
 
         accountingEntityPanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         accountingEntityPanel.setLayout(new java.awt.GridBagLayout());
