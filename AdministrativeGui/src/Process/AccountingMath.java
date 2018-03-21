@@ -12,7 +12,7 @@ public class AccountingMath
     private double administrationSpend, financialSpend, rawUti;
     //Specific Variables
     private double var_sellingSpending, var_UnitCost, static_UnitCost, static_TotalCost, static_AdminCost;
-    private int quantityProduct, production;
+    private int quantityProduct, production, invFinal;
     
     //Note: Check the correct writing of static_UnitCost(Costo Fijo Unitario)
     //Note: Translate properly cost and spend >:,v
@@ -32,6 +32,12 @@ public class AccountingMath
         this.quantityProduct = value2;
         
         return initialInventory = value1 * (double)quantityProduct;
+    }
+    
+    public double inventarioFinal()
+    {
+        
+        return invFinal * manufCost;
     }
     
     public double costoArtoManuf ()
