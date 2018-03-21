@@ -7,7 +7,7 @@ package GUI;
 
 /**
  *
- * @author Leilenoor
+ * @author Joker_Queen
  */
 public class MainMenu extends javax.swing.JFrame {
 

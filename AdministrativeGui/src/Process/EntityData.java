@@ -7,7 +7,7 @@ package Process;
 
 /**
  *
- * @author Anabell
+ * @author Joker
  */
 public class EntityData {
     //Variables

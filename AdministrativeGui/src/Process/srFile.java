@@ -9,7 +9,6 @@ package Process;
  *
  * @author Joker
  */
-public class AccountData {
-    //Variables
+public class srFile {
     
 }

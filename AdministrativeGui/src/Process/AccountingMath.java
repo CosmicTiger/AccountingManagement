@@ -3,6 +3,11 @@ package Process;
 
 //Metodo Absorbente
 
+/**
+ *
+ * @author Queen_Joker
+ */
+
 public class AccountingMath 
 {
     // Generic Variables
