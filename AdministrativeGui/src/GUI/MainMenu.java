@@ -43,9 +43,9 @@ public class MainMenu extends javax.swing.JFrame {
         entityIDTextField = new javax.swing.JTextField();
         entityIDlabel = new javax.swing.JLabel();
         entityDateLabel = new javax.swing.JLabel();
-        estateResultDayStatement = new com.toedter.calendar.JDateChooser();
         entityNameTextField = new javax.swing.JTextField();
         entityTitleLabel = new javax.swing.JLabel();
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
         jPanel2 = new javax.swing.JPanel();
         _codeLabel = new javax.swing.JLabel();
         codeTxtField = new javax.swing.JTextField();
@@ -175,10 +175,6 @@ public class MainMenu extends javax.swing.JFrame {
         accountingEntityPanel.add(entityDateLabel, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
-        gridBagConstraints.gridy = 3;
-        accountingEntityPanel.add(estateResultDayStatement, gridBagConstraints);
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 1;
         accountingEntityPanel.add(entityNameTextField, gridBagConstraints);
 
@@ -188,6 +184,10 @@ public class MainMenu extends javax.swing.JFrame {
         gridBagConstraints.gridy = 0;
         gridBagConstraints.gridwidth = 2;
         accountingEntityPanel.add(entityTitleLabel, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 3;
+        accountingEntityPanel.add(jDateChooser1, gridBagConstraints);
 
         getContentPane().add(accountingEntityPanel);
         accountingEntityPanel.setBounds(670, 40, 150, 100);
@@ -368,10 +368,10 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JLabel entityIDlabel;
     private javax.swing.JTextField entityNameTextField;
     private javax.swing.JLabel entityTitleLabel;
-    private com.toedter.calendar.JDateChooser estateResultDayStatement;
     private javax.swing.JMenu fileMenu;
     private javax.swing.JMenu helpMenu;
     private javax.swing.JComboBox<String> jComboBox1;
+    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JMenu jMenu6;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
