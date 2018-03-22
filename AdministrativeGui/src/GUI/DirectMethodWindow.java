@@ -256,7 +256,7 @@ public class DirectMethodWindow extends javax.swing.JFrame {
         jPanel2.add(jFormattedTextField14);
         jFormattedTextField14.setBounds(285, 580, 80, 20);
 
-        jLabel10.setText("  METODO ABSORBENTE");
+        jLabel10.setText("  METODO DIRECTO");
         jPanel2.add(jLabel10);
         jLabel10.setBounds(140, 30, 120, 14);
 
@@ -285,6 +285,7 @@ public class DirectMethodWindow extends javax.swing.JFrame {
 
         jPanel4.setLayout(null);
 
+        jLabel9.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel9.setText("Ventas");
         jLabel9.addAncestorListener(new javax.swing.event.AncestorListener() {
             public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
@@ -428,13 +429,15 @@ public class DirectMethodWindow extends javax.swing.JFrame {
         jPanel4.add(jFormattedTextField28);
         jFormattedTextField28.setBounds(285, 580, 80, 20);
 
+        jLabel33.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jLabel33.setText("  METODO ABSORBENTE");
         jPanel4.add(jLabel33);
-        jLabel33.setBounds(140, 30, 120, 14);
+        jLabel33.setBounds(150, 30, 150, 14);
 
+        jLabel34.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
         jLabel34.setText("ESTADO DE RESULTADO");
         jPanel4.add(jLabel34);
-        jLabel34.setBounds(140, 10, 140, 14);
+        jLabel34.setBounds(140, 10, 180, 18);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);

@@ -3,6 +3,9 @@ package Process;
 
 //Metodo Absorbente
 
+import GUI.AbsorbentMethodWindow;
+
+
 /**
  *
  * @author Queen_Joker
@@ -11,47 +14,58 @@ package Process;
 public class AccountingMath 
 {
     // Generic Variables
-    private double value1, value2;
+    //private double value1/**/, value2;
     // Main Variables
-    private double selling, sellingCost, initialInventory, finalInventory, manufCost, operationSpend;
+    private double sellingCost,  manufCost/*Unitario*/, operationSpend,totalSelling,quantityProduct/*cantidad de producto*/;
     private double administrationSpend, financialSpend, rawUti;
     //Specific Variables
     private double var_sellingSpending, var_UnitCost, static_UnitCost, static_TotalCost, static_AdminCost;
-    private int quantityProduct, production, invFinal;
+    private int production, invFinal, selling/*unidades*/,initialInventory, finalInventory, totalManufCost;
     
     //Note: Check the correct writing of static_UnitCost(Costo Fijo Unitario)
     //Note: Translate properly cost and spend >:,v
     
-    public double Ventas(double value1, int value2)
-    {
-        this.value1 = value1;
-        this.quantityProduct = value2;
+    public double Ventas()
+    {   this.selling= Integer.parseInt( AbsorbentMethodWindow.selling.getText());
+        //this.value1 = value1;
+        this.quantityProduct = Double.parseDouble(AbsorbentMethodWindow.quantityProduct.getText());
        
-        return selling = value1 * (double)quantityProduct;
+        return totalSelling = selling* (double)quantityProduct;
     }
     
-    public double inventarioInic(double value1, int value2)
+    public double costoArtoManufunit ()
+    {
+        this.static_UnitCost = (double) AbsorbentMethodWindow.static_UnitCost.getValue();
+        this.production = (int) AbsorbentMethodWindow.production.getValue();
+    
+        static_TotalCost = static_TotalCost / (int) production;
+        
+        return manufCost = var_UnitCost + static_UnitCost;
+    }
+    
+    public double inventarioInic()
     {
         
-        this.value1 = value1;
-        this.quantityProduct = value2;
+        this.initialInventory= (int) AbsorbentMethodWindow.initialInventory.getValue();
         
-        return initialInventory = value1 * (double)quantityProduct;
+        return  initialInventory * manufCost;
+    }
+    
+    public double costoManufTotal()
+    {
+        this.totalManufCost= (int) AbsorbentMethodWindow.totalManufCost.getValue();
+        
+        return totalManufCost * manufCost;
     }
     
     public double inventarioFinal()
     {
+        this.invFinal= (int) AbsorbentMethodWindow.invFinal.getValue();
         
         return invFinal * manufCost;
     }
     
-    public double costoArtoManuf ()
-    {
     
-        static_UnitCost = static_TotalCost / (double) production;
-        
-        return manufCost = var_UnitCost + static_UnitCost;
-    }
     
     public double CostoDeVentas()
     {
