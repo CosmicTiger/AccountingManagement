@@ -78,7 +78,7 @@ public class MainMenu extends javax.swing.JFrame {
             new Object [][] {
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
+                {null, "fa", null, null, null, null},
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
