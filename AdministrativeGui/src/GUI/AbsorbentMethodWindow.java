@@ -110,6 +110,12 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
         jLabel20.setText("VENTAS NETAS");
         jPanel4.add(jLabel20);
         jLabel20.setBounds(110, 110, 100, 20);
+
+        selling1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                selling1ActionPerformed(evt);
+            }
+        });
         jPanel4.add(selling1);
         selling1.setBounds(260, 110, 80, 20);
         jPanel4.add(jLabel23);
@@ -713,6 +719,10 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
         utilidadOperacion.setValue(calculo.UtilidadOp());
         
     }//GEN-LAST:event_CalcularActionPerformed
+
+    private void selling1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selling1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_selling1ActionPerformed
 
     /**
      * @param args the command line arguments

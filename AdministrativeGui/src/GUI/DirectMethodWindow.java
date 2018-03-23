@@ -1,15 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package GUI;
+import Process.*;
+
+
 
 /**
  *
  * @author Anabell
  */
-public class DirectMethodWindow extends javax.swing.JFrame {
+public class DirectMethodWindow extends javax.swing.JFrame 
+{
+    AccountingMath2 met = new AccountingMath2();
 
     /**
      * Creates new form NewJFrame
@@ -28,46 +29,6 @@ public class DirectMethodWindow extends javax.swing.JFrame {
     private void initComponents() {
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jFormattedTextField1 = new javax.swing.JFormattedTextField();
-        jFormattedTextField2 = new javax.swing.JFormattedTextField();
-        jLabel1 = new javax.swing.JLabel();
-        jSeparator1 = new javax.swing.JSeparator();
-        jFormattedTextField3 = new javax.swing.JFormattedTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jFormattedTextField4 = new javax.swing.JFormattedTextField();
-        jFormattedTextField5 = new javax.swing.JFormattedTextField();
-        jSeparator2 = new javax.swing.JSeparator();
-        jFormattedTextField6 = new javax.swing.JFormattedTextField();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jFormattedTextField7 = new javax.swing.JFormattedTextField();
-        jFormattedTextField8 = new javax.swing.JFormattedTextField();
-        jSeparator3 = new javax.swing.JSeparator();
-        jSeparator4 = new javax.swing.JSeparator();
-        jLabel11 = new javax.swing.JLabel();
-        jFormattedTextField9 = new javax.swing.JFormattedTextField();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jFormattedTextField10 = new javax.swing.JFormattedTextField();
-        jFormattedTextField11 = new javax.swing.JFormattedTextField();
-        jFormattedTextField12 = new javax.swing.JFormattedTextField();
-        jSeparator6 = new javax.swing.JSeparator();
-        jLabel16 = new javax.swing.JLabel();
-        jFormattedTextField13 = new javax.swing.JFormattedTextField();
-        jLabel17 = new javax.swing.JLabel();
-        jSeparator7 = new javax.swing.JSeparator();
-        jFormattedTextField14 = new javax.swing.JFormattedTextField();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
@@ -108,180 +69,52 @@ public class DirectMethodWindow extends javax.swing.JFrame {
         jFormattedTextField28 = new javax.swing.JFormattedTextField();
         jLabel33 = new javax.swing.JLabel();
         jLabel34 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        Ventas = new javax.swing.JFormattedTextField();
+        CostoUnitVentas = new javax.swing.JFormattedTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        VentasNetas = new javax.swing.JFormattedTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        CostoVarProd = new javax.swing.JFormattedTextField();
+        CostoVarOp = new javax.swing.JFormattedTextField();
+        jSeparator2 = new javax.swing.JSeparator();
+        CostoVarUnit = new javax.swing.JFormattedTextField();
+        jSeparator3 = new javax.swing.JSeparator();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        InvInicial = new javax.swing.JFormattedTextField();
+        ArtManuf = new javax.swing.JFormattedTextField();
+        InvFinal = new javax.swing.JFormattedTextField();
+        jSeparator6 = new javax.swing.JSeparator();
+        jLabel16 = new javax.swing.JLabel();
+        CostoVarVenta = new javax.swing.JFormattedTextField();
+        jLabel17 = new javax.swing.JLabel();
+        jSeparator7 = new javax.swing.JSeparator();
+        UtilidadNeta = new javax.swing.JFormattedTextField();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        MargenContr = new javax.swing.JFormattedTextField();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jSeparator4 = new javax.swing.JSeparator();
+        CostoFijoProd = new javax.swing.JFormattedTextField();
+        CostoFijoAdm = new javax.swing.JFormattedTextField();
+        CostoFijo = new javax.swing.JFormattedTextField();
+        jSeparator13 = new javax.swing.JSeparator();
+        Calcular = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jPanel2.setLayout(null);
-
-        jLabel4.setText("Ventas");
-        jLabel4.addAncestorListener(new javax.swing.event.AncestorListener() {
-            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
-            }
-            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
-                jLabel4AncestorAdded(evt);
-            }
-            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
-            }
-        });
-        jPanel2.add(jLabel4);
-        jLabel4.setBounds(70, 60, 100, 20);
-
-        jLabel15.setText("Costo de ventas unitario");
-        jPanel2.add(jLabel15);
-        jLabel15.setBounds(30, 90, 130, 20);
-
-        jFormattedTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField1ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jFormattedTextField1);
-        jFormattedTextField1.setBounds(280, 60, 80, 20);
-
-        jFormattedTextField2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField2ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jFormattedTextField2);
-        jFormattedTextField2.setBounds(280, 90, 80, 20);
-
-        jLabel1.setText("VENTAS NETAS");
-        jPanel2.add(jLabel1);
-        jLabel1.setBounds(50, 130, 80, 14);
-        jPanel2.add(jSeparator1);
-        jSeparator1.setBounds(230, 120, 170, 10);
-        jPanel2.add(jFormattedTextField3);
-        jFormattedTextField3.setBounds(280, 130, 80, 20);
-
-        jLabel2.setText("Costo Fijo total de produccion");
-        jPanel2.add(jLabel2);
-        jLabel2.setBounds(20, 180, 160, 14);
-
-        jLabel3.setText("Produccion en unidades");
-        jPanel2.add(jLabel3);
-        jLabel3.setBounds(40, 210, 113, 14);
-        jPanel2.add(jLabel5);
-        jLabel5.setBounds(80, 260, 0, 0);
-
-        jLabel6.setText("Costo Fijo Unitario de produccion ");
-        jPanel2.add(jLabel6);
-        jLabel6.setBounds(20, 250, 170, 20);
-        jPanel2.add(jFormattedTextField4);
-        jFormattedTextField4.setBounds(280, 180, 80, 20);
-
-        jFormattedTextField5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField5ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jFormattedTextField5);
-        jFormattedTextField5.setBounds(280, 210, 80, 20);
-        jPanel2.add(jSeparator2);
-        jSeparator2.setBounds(240, 240, 160, 10);
-        jPanel2.add(jFormattedTextField6);
-        jFormattedTextField6.setBounds(280, 250, 80, 20);
-
-        jLabel7.setText("Costo variable unitario de produccion");
-        jPanel2.add(jLabel7);
-        jLabel7.setBounds(20, 310, 190, 14);
-
-        jLabel8.setText("Costo Fijo Unitario de produccion ");
-        jPanel2.add(jLabel8);
-        jLabel8.setBounds(30, 340, 170, 14);
-        jPanel2.add(jFormattedTextField7);
-        jFormattedTextField7.setBounds(280, 310, 80, 20);
-        jPanel2.add(jFormattedTextField8);
-        jFormattedTextField8.setBounds(280, 340, 80, 20);
-        jPanel2.add(jSeparator3);
-        jSeparator3.setBounds(240, 372, 140, 0);
-        jPanel2.add(jSeparator4);
-        jSeparator4.setBounds(230, 370, 170, 10);
-
-        jLabel11.setText("Costo de articulos manofacturados");
-        jPanel2.add(jLabel11);
-        jLabel11.setBounds(20, 380, 180, 14);
-
-        jFormattedTextField9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField9ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jFormattedTextField9);
-        jFormattedTextField9.setBounds(280, 380, 80, 20);
-
-        jLabel12.setText("Inventario Inicial");
-        jPanel2.add(jLabel12);
-        jLabel12.setBounds(70, 440, 100, 14);
-
-        jLabel13.setText("Costo articulos manofacturados");
-        jPanel2.add(jLabel13);
-        jLabel13.setBounds(30, 470, 152, 14);
-
-        jLabel14.setText("Inventario Final");
-        jPanel2.add(jLabel14);
-        jLabel14.setBounds(70, 500, 75, 14);
-
-        jFormattedTextField10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField10ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jFormattedTextField10);
-        jFormattedTextField10.setBounds(280, 430, 80, 20);
-
-        jFormattedTextField11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField11ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jFormattedTextField11);
-        jFormattedTextField11.setBounds(280, 460, 80, 20);
-        jPanel2.add(jFormattedTextField12);
-        jFormattedTextField12.setBounds(280, 490, 80, 20);
-        jPanel2.add(jSeparator6);
-        jSeparator6.setBounds(220, 520, 190, 10);
-
-        jLabel16.setText("COSTO DE VENTAS");
-        jPanel2.add(jLabel16);
-        jLabel16.setBounds(60, 530, 110, 14);
-        jPanel2.add(jFormattedTextField13);
-        jFormattedTextField13.setBounds(280, 530, 80, 20);
-
-        jLabel17.setText("UTILIDAD BRUTA");
-        jPanel2.add(jLabel17);
-        jLabel17.setBounds(70, 590, 100, 14);
-        jPanel2.add(jSeparator7);
-        jSeparator7.setBounds(170, 570, 280, 10);
-        jPanel2.add(jFormattedTextField14);
-        jFormattedTextField14.setBounds(285, 580, 80, 20);
-
-        jLabel10.setText("  METODO DIRECTO");
-        jPanel2.add(jLabel10);
-        jLabel10.setBounds(160, 30, 120, 14);
-
-        jLabel18.setText("ESTADO DE RESULTADO");
-        jPanel2.add(jLabel18);
-        jLabel18.setBounds(150, 10, 140, 14);
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 446, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 109, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 492, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 551, Short.MAX_VALUE))
-        );
-
-        jScrollPane1.setViewportView(jPanel1);
-
-        jTabbedPane1.addTab("Con precio Unitario", jScrollPane1);
 
         jPanel4.setLayout(null);
 
@@ -458,6 +291,235 @@ public class DirectMethodWindow extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Cifras conocidas", jScrollPane2);
 
+        jPanel2.setLayout(null);
+
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel4.setText("Ventas");
+        jLabel4.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+                jLabel4AncestorAdded(evt);
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+        });
+        jPanel2.add(jLabel4);
+        jLabel4.setBounds(100, 120, 100, 20);
+
+        jLabel15.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel15.setText("Costo de ventas unitario");
+        jPanel2.add(jLabel15);
+        jLabel15.setBounds(60, 150, 150, 20);
+
+        Ventas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VentasActionPerformed(evt);
+            }
+        });
+        jPanel2.add(Ventas);
+        Ventas.setBounds(300, 120, 80, 20);
+
+        CostoUnitVentas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CostoUnitVentasActionPerformed(evt);
+            }
+        });
+        jPanel2.add(CostoUnitVentas);
+        CostoUnitVentas.setBounds(300, 150, 80, 20);
+
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel1.setText("VENTAS NETAS");
+        jPanel2.add(jLabel1);
+        jLabel1.setBounds(70, 190, 120, 17);
+        jPanel2.add(jSeparator1);
+        jSeparator1.setBounds(250, 180, 170, 10);
+
+        VentasNetas.setEditable(false);
+        jPanel2.add(VentasNetas);
+        VentasNetas.setBounds(300, 190, 80, 20);
+
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel2.setText("Costo Variable Unitario de produccion");
+        jPanel2.add(jLabel2);
+        jLabel2.setBounds(30, 240, 220, 17);
+
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel3.setText("Costo Variable Unitario de operacion");
+        jPanel2.add(jLabel3);
+        jLabel3.setBounds(30, 270, 220, 17);
+        jPanel2.add(jLabel5);
+        jLabel5.setBounds(80, 260, 0, 0);
+
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel6.setText("Costo Variable Unitario");
+        jPanel2.add(jLabel6);
+        jLabel6.setBounds(60, 310, 160, 20);
+        jPanel2.add(CostoVarProd);
+        CostoVarProd.setBounds(300, 240, 80, 20);
+
+        CostoVarOp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CostoVarOpActionPerformed(evt);
+            }
+        });
+        jPanel2.add(CostoVarOp);
+        CostoVarOp.setBounds(300, 270, 80, 20);
+        jPanel2.add(jSeparator2);
+        jSeparator2.setBounds(260, 300, 160, 10);
+
+        CostoVarUnit.setEditable(false);
+        jPanel2.add(CostoVarUnit);
+        CostoVarUnit.setBounds(300, 310, 80, 20);
+        jPanel2.add(jSeparator3);
+        jSeparator3.setBounds(240, 372, 140, 0);
+
+        jLabel12.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel12.setText("Inventario Inicial");
+        jPanel2.add(jLabel12);
+        jLabel12.setBounds(90, 380, 100, 17);
+
+        jLabel13.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel13.setText("Costo articulos manofacturados");
+        jPanel2.add(jLabel13);
+        jLabel13.setBounds(50, 410, 180, 17);
+
+        jLabel14.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel14.setText("Inventario Final");
+        jPanel2.add(jLabel14);
+        jLabel14.setBounds(90, 440, 120, 17);
+
+        InvInicial.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                InvInicialActionPerformed(evt);
+            }
+        });
+        jPanel2.add(InvInicial);
+        InvInicial.setBounds(300, 370, 80, 20);
+
+        ArtManuf.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ArtManufActionPerformed(evt);
+            }
+        });
+        jPanel2.add(ArtManuf);
+        ArtManuf.setBounds(300, 400, 80, 20);
+        jPanel2.add(InvFinal);
+        InvFinal.setBounds(300, 430, 80, 20);
+        jPanel2.add(jSeparator6);
+        jSeparator6.setBounds(240, 460, 190, 10);
+
+        jLabel16.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel16.setText("COSTO VARIABLE DE VENTA");
+        jPanel2.add(jLabel16);
+        jLabel16.setBounds(40, 470, 190, 20);
+
+        CostoVarVenta.setEditable(false);
+        jPanel2.add(CostoVarVenta);
+        CostoVarVenta.setBounds(300, 470, 80, 20);
+
+        jLabel17.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel17.setText("UTILIDAD NETA");
+        jPanel2.add(jLabel17);
+        jLabel17.setBounds(80, 720, 130, 20);
+        jPanel2.add(jSeparator7);
+        jSeparator7.setBounds(220, 500, 230, 10);
+
+        UtilidadNeta.setEditable(false);
+        jPanel2.add(UtilidadNeta);
+        UtilidadNeta.setBounds(300, 720, 80, 20);
+
+        jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel10.setText("  METODO DIRECTO");
+        jPanel2.add(jLabel10);
+        jLabel10.setBounds(150, 60, 150, 17);
+
+        jLabel18.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jLabel18.setText("ESTADO DE RESULTADO");
+        jPanel2.add(jLabel18);
+        jLabel18.setBounds(120, 30, 220, 20);
+
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel7.setText("MARGEN DE CONTRIBUCION");
+        jPanel2.add(jLabel7);
+        jLabel7.setBounds(40, 520, 210, 17);
+
+        MargenContr.setEditable(false);
+        MargenContr.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MargenContrActionPerformed(evt);
+            }
+        });
+        jPanel2.add(MargenContr);
+        MargenContr.setBounds(300, 520, 80, 20);
+
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel8.setText("Costo Fijo de Produccion");
+        jPanel2.add(jLabel8);
+        jLabel8.setBounds(70, 590, 150, 17);
+
+        jLabel11.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel11.setText("Gasto Fijo de Administracion");
+        jPanel2.add(jLabel11);
+        jLabel11.setBounds(50, 620, 180, 17);
+
+        jLabel35.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel35.setText("Costo Fijo");
+        jPanel2.add(jLabel35);
+        jLabel35.setBounds(100, 670, 70, 17);
+        jPanel2.add(jSeparator4);
+        jSeparator4.setBounds(210, 700, 250, 10);
+
+        CostoFijoProd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CostoFijoProdActionPerformed(evt);
+            }
+        });
+        jPanel2.add(CostoFijoProd);
+        CostoFijoProd.setBounds(300, 590, 80, 20);
+        jPanel2.add(CostoFijoAdm);
+        CostoFijoAdm.setBounds(300, 620, 80, 20);
+
+        CostoFijo.setEditable(false);
+        CostoFijo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CostoFijoActionPerformed(evt);
+            }
+        });
+        jPanel2.add(CostoFijo);
+        CostoFijo.setBounds(300, 670, 80, 20);
+        jPanel2.add(jSeparator13);
+        jSeparator13.setBounds(260, 650, 150, 10);
+
+        Calcular.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        Calcular.setText("Calcular");
+        Calcular.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CalcularActionPerformed(evt);
+            }
+        });
+        jPanel2.add(Calcular);
+        Calcular.setBounds(270, 790, 130, 23);
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 446, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 109, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 492, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 551, Short.MAX_VALUE))
+        );
+
+        jScrollPane1.setViewportView(jPanel1);
+
+        jTabbedPane1.addTab("Con precio Unitario", jScrollPane1);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -482,29 +544,25 @@ public class DirectMethodWindow extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jLabel4AncestorAdded
 
-    private void jFormattedTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField1ActionPerformed
+    private void VentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VentasActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField1ActionPerformed
+    }//GEN-LAST:event_VentasActionPerformed
 
-    private void jFormattedTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField2ActionPerformed
+    private void CostoUnitVentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CostoUnitVentasActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField2ActionPerformed
+    }//GEN-LAST:event_CostoUnitVentasActionPerformed
 
-    private void jFormattedTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField5ActionPerformed
+    private void CostoVarOpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CostoVarOpActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField5ActionPerformed
+    }//GEN-LAST:event_CostoVarOpActionPerformed
 
-    private void jFormattedTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField9ActionPerformed
+    private void InvInicialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InvInicialActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField9ActionPerformed
+    }//GEN-LAST:event_InvInicialActionPerformed
 
-    private void jFormattedTextField10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField10ActionPerformed
+    private void ArtManufActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ArtManufActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField10ActionPerformed
-
-    private void jFormattedTextField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField11ActionPerformed
+    }//GEN-LAST:event_ArtManufActionPerformed
 
     private void jLabel9AncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jLabel9AncestorAdded
         // TODO add your handling code here:
@@ -533,6 +591,29 @@ public class DirectMethodWindow extends javax.swing.JFrame {
     private void jFormattedTextField25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField25ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jFormattedTextField25ActionPerformed
+
+    private void MargenContrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MargenContrActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MargenContrActionPerformed
+
+    private void CostoFijoProdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CostoFijoProdActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CostoFijoProdActionPerformed
+
+    private void CostoFijoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CostoFijoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CostoFijoActionPerformed
+
+    private void CalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CalcularActionPerformed
+        AccountingMath2 met = new AccountingMath2();
+        VentasNetas.setValue(met.Ventas());
+        CostoVarUnit.setValue(met.CostoVariable());
+        CostoVarVenta.setValue(met.CostoVariableDeVenta());
+        MargenContr.setValue(met.Margen());
+        CostoFijo.setValue(met.CostoFijo());
+        UtilidadNeta.setValue(met.UtilidadNeta());
+        
+    }//GEN-LAST:event_CalcularActionPerformed
 
     /**
      * @param args the command line arguments
@@ -577,18 +658,27 @@ public class DirectMethodWindow extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JFormattedTextField jFormattedTextField1;
-    private javax.swing.JFormattedTextField jFormattedTextField10;
-    private javax.swing.JFormattedTextField jFormattedTextField11;
-    private javax.swing.JFormattedTextField jFormattedTextField12;
-    private javax.swing.JFormattedTextField jFormattedTextField13;
-    private javax.swing.JFormattedTextField jFormattedTextField14;
+    public static javax.swing.JFormattedTextField ArtManuf;
+    private javax.swing.JButton Calcular;
+    public static javax.swing.JFormattedTextField CostoFijo;
+    public static javax.swing.JFormattedTextField CostoFijoAdm;
+    public static javax.swing.JFormattedTextField CostoFijoProd;
+    public static javax.swing.JFormattedTextField CostoUnitVentas;
+    public static javax.swing.JFormattedTextField CostoVarOp;
+    public static javax.swing.JFormattedTextField CostoVarProd;
+    public static javax.swing.JFormattedTextField CostoVarUnit;
+    public static javax.swing.JFormattedTextField CostoVarVenta;
+    public static javax.swing.JFormattedTextField InvFinal;
+    public static javax.swing.JFormattedTextField InvInicial;
+    public static javax.swing.JFormattedTextField MargenContr;
+    public static javax.swing.JFormattedTextField UtilidadNeta;
+    public static javax.swing.JFormattedTextField Ventas;
+    public static javax.swing.JFormattedTextField VentasNetas;
     private javax.swing.JFormattedTextField jFormattedTextField15;
     private javax.swing.JFormattedTextField jFormattedTextField16;
     private javax.swing.JFormattedTextField jFormattedTextField17;
     private javax.swing.JFormattedTextField jFormattedTextField18;
     private javax.swing.JFormattedTextField jFormattedTextField19;
-    private javax.swing.JFormattedTextField jFormattedTextField2;
     private javax.swing.JFormattedTextField jFormattedTextField20;
     private javax.swing.JFormattedTextField jFormattedTextField21;
     private javax.swing.JFormattedTextField jFormattedTextField22;
@@ -598,13 +688,6 @@ public class DirectMethodWindow extends javax.swing.JFrame {
     private javax.swing.JFormattedTextField jFormattedTextField26;
     private javax.swing.JFormattedTextField jFormattedTextField27;
     private javax.swing.JFormattedTextField jFormattedTextField28;
-    private javax.swing.JFormattedTextField jFormattedTextField3;
-    private javax.swing.JFormattedTextField jFormattedTextField4;
-    private javax.swing.JFormattedTextField jFormattedTextField5;
-    private javax.swing.JFormattedTextField jFormattedTextField6;
-    private javax.swing.JFormattedTextField jFormattedTextField7;
-    private javax.swing.JFormattedTextField jFormattedTextField8;
-    private javax.swing.JFormattedTextField jFormattedTextField9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -633,6 +716,7 @@ public class DirectMethodWindow extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -649,6 +733,7 @@ public class DirectMethodWindow extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator10;
     private javax.swing.JSeparator jSeparator11;
     private javax.swing.JSeparator jSeparator12;
+    private javax.swing.JSeparator jSeparator13;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
@@ -659,4 +744,6 @@ public class DirectMethodWindow extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator9;
     private javax.swing.JTabbedPane jTabbedPane1;
     // End of variables declaration//GEN-END:variables
+
+    
 }
