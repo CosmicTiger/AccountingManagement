@@ -21,35 +21,36 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jLabel20 = new javax.swing.JLabel();
-        jFormattedTextField17 = new javax.swing.JFormattedTextField();
+        selling1 = new javax.swing.JFormattedTextField();
         jLabel23 = new javax.swing.JLabel();
         jSeparator9 = new javax.swing.JSeparator();
-        jFormattedTextField24 = new javax.swing.JFormattedTextField();
+        invInicial1 = new javax.swing.JFormattedTextField();
         jLabel31 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
         jSeparator12 = new javax.swing.JSeparator();
-        jFormattedTextField28 = new javax.swing.JFormattedTextField();
+        UtilidadBruta = new javax.swing.JFormattedTextField();
         jLabel33 = new javax.swing.JLabel();
         jLabel34 = new javax.swing.JLabel();
         jLabel41 = new javax.swing.JLabel();
-        jFormattedTextField33 = new javax.swing.JFormattedTextField();
+        gastoOp = new javax.swing.JFormattedTextField();
         jSeparator5 = new javax.swing.JSeparator();
         jLabel9 = new javax.swing.JLabel();
-        jFormattedTextField15 = new javax.swing.JFormattedTextField();
+        utilidadOperacion = new javax.swing.JFormattedTextField();
         jLabel19 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
-        jFormattedTextField16 = new javax.swing.JFormattedTextField();
-        jFormattedTextField18 = new javax.swing.JFormattedTextField();
-        jFormattedTextField19 = new javax.swing.JFormattedTextField();
+        manufTotal1 = new javax.swing.JFormattedTextField();
+        invFinal1 = new javax.swing.JFormattedTextField();
+        costoDeVentas = new javax.swing.JFormattedTextField();
         jLabel24 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
-        jFormattedTextField21 = new javax.swing.JFormattedTextField();
-        jFormattedTextField22 = new javax.swing.JFormattedTextField();
-        jFormattedTextField23 = new javax.swing.JFormattedTextField();
+        gastoVenta = new javax.swing.JFormattedTextField();
+        gastoAdm = new javax.swing.JFormattedTextField();
+        gastoFinanc = new javax.swing.JFormattedTextField();
         jSeparator8 = new javax.swing.JSeparator();
         jSeparator10 = new javax.swing.JSeparator();
+        Calcular = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
@@ -82,25 +83,23 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
         invFinal = new javax.swing.JFormattedTextField();
         jSeparator6 = new javax.swing.JSeparator();
         jLabel16 = new javax.swing.JLabel();
-        jFormattedTextField13 = new javax.swing.JFormattedTextField();
+        sellingCost = new javax.swing.JFormattedTextField();
         jLabel17 = new javax.swing.JLabel();
         jSeparator7 = new javax.swing.JSeparator();
-        jFormattedTextField14 = new javax.swing.JFormattedTextField();
+        rawUti = new javax.swing.JFormattedTextField();
         jLabel10 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
-        jLabel35 = new javax.swing.JLabel();
         jLabel36 = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
-        jFormattedTextField29 = new javax.swing.JFormattedTextField();
-        jFormattedTextField30 = new javax.swing.JFormattedTextField();
+        var_sellingSpending = new javax.swing.JFormattedTextField();
         jSeparator13 = new javax.swing.JSeparator();
-        jFormattedTextField31 = new javax.swing.JFormattedTextField();
+        operationSpend = new javax.swing.JFormattedTextField();
         jLabel40 = new javax.swing.JLabel();
-        jFormattedTextField32 = new javax.swing.JFormattedTextField();
+        operationUti = new javax.swing.JFormattedTextField();
         jLabel25 = new javax.swing.JLabel();
-        jFormattedTextField20 = new javax.swing.JFormattedTextField();
+        static_AdminCost = new javax.swing.JFormattedTextField();
         calcular = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -111,20 +110,20 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
         jLabel20.setText("VENTAS NETAS");
         jPanel4.add(jLabel20);
         jLabel20.setBounds(110, 110, 100, 20);
-        jPanel4.add(jFormattedTextField17);
-        jFormattedTextField17.setBounds(260, 110, 80, 20);
+        jPanel4.add(selling1);
+        selling1.setBounds(260, 110, 80, 20);
         jPanel4.add(jLabel23);
         jLabel23.setBounds(80, 260, 0, 0);
         jPanel4.add(jSeparator9);
         jSeparator9.setBounds(240, 372, 140, 0);
 
-        jFormattedTextField24.addActionListener(new java.awt.event.ActionListener() {
+        invInicial1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField24ActionPerformed(evt);
+                invInicial1ActionPerformed(evt);
             }
         });
-        jPanel4.add(jFormattedTextField24);
-        jFormattedTextField24.setBounds(260, 170, 80, 20);
+        jPanel4.add(invInicial1);
+        invInicial1.setBounds(260, 170, 80, 20);
 
         jLabel31.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jLabel31.setText("COSTO DE VENTAS");
@@ -137,13 +136,13 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
         jLabel32.setBounds(90, 350, 120, 14);
         jPanel4.add(jSeparator12);
         jSeparator12.setBounds(50, 280, 330, 10);
-        jPanel4.add(jFormattedTextField28);
-        jFormattedTextField28.setBounds(260, 340, 80, 20);
+        jPanel4.add(UtilidadBruta);
+        UtilidadBruta.setBounds(260, 340, 80, 20);
 
         jLabel33.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel33.setText("  METODO ABSORBENTE");
         jPanel4.add(jLabel33);
-        jLabel33.setBounds(140, 50, 160, 17);
+        jLabel33.setBounds(150, 50, 160, 17);
 
         jLabel34.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel34.setText("ESTADO DE RESULTADO");
@@ -155,13 +154,13 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
         jPanel4.add(jLabel41);
         jLabel41.setBounds(60, 520, 140, 20);
 
-        jFormattedTextField33.addActionListener(new java.awt.event.ActionListener() {
+        gastoOp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField33ActionPerformed(evt);
+                gastoOpActionPerformed(evt);
             }
         });
-        jPanel4.add(jFormattedTextField33);
-        jFormattedTextField33.setBounds(260, 520, 80, 20);
+        jPanel4.add(gastoOp);
+        gastoOp.setBounds(260, 520, 80, 20);
         jPanel4.add(jSeparator5);
         jSeparator5.setBounds(60, 570, 330, 10);
 
@@ -170,13 +169,13 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
         jPanel4.add(jLabel9);
         jLabel9.setBounds(60, 590, 170, 20);
 
-        jFormattedTextField15.addActionListener(new java.awt.event.ActionListener() {
+        utilidadOperacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField15ActionPerformed(evt);
+                utilidadOperacionActionPerformed(evt);
             }
         });
-        jPanel4.add(jFormattedTextField15);
-        jFormattedTextField15.setBounds(260, 590, 80, 20);
+        jPanel4.add(utilidadOperacion);
+        utilidadOperacion.setBounds(260, 590, 80, 20);
 
         jLabel19.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jLabel19.setText("Inventario inicial");
@@ -193,32 +192,32 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
         jPanel4.add(jLabel22);
         jLabel22.setBounds(95, 250, 90, 14);
 
-        jFormattedTextField16.addActionListener(new java.awt.event.ActionListener() {
+        manufTotal1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField16ActionPerformed(evt);
+                manufTotal1ActionPerformed(evt);
             }
         });
-        jPanel4.add(jFormattedTextField16);
-        jFormattedTextField16.setBounds(260, 210, 80, 20);
+        jPanel4.add(manufTotal1);
+        manufTotal1.setBounds(260, 210, 80, 20);
 
-        jFormattedTextField18.addActionListener(new java.awt.event.ActionListener() {
+        invFinal1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField18ActionPerformed(evt);
+                invFinal1ActionPerformed(evt);
             }
         });
-        jPanel4.add(jFormattedTextField18);
-        jFormattedTextField18.setBounds(260, 250, 80, 20);
+        jPanel4.add(invFinal1);
+        invFinal1.setBounds(260, 250, 80, 20);
 
-        jFormattedTextField19.addActionListener(new java.awt.event.ActionListener() {
+        costoDeVentas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField19ActionPerformed(evt);
+                costoDeVentasActionPerformed(evt);
             }
         });
-        jPanel4.add(jFormattedTextField19);
-        jFormattedTextField19.setBounds(260, 300, 80, 20);
+        jPanel4.add(costoDeVentas);
+        costoDeVentas.setBounds(260, 300, 80, 20);
 
         jLabel24.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jLabel24.setText("Gastos de Operacion");
+        jLabel24.setText("Gastos de Venta");
         jPanel4.add(jLabel24);
         jLabel24.setBounds(90, 410, 120, 20);
 
@@ -232,33 +231,43 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
         jPanel4.add(jLabel27);
         jLabel27.setBounds(100, 470, 120, 20);
 
-        jFormattedTextField21.addActionListener(new java.awt.event.ActionListener() {
+        gastoVenta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField21ActionPerformed(evt);
+                gastoVentaActionPerformed(evt);
             }
         });
-        jPanel4.add(jFormattedTextField21);
-        jFormattedTextField21.setBounds(260, 410, 80, 20);
+        jPanel4.add(gastoVenta);
+        gastoVenta.setBounds(260, 410, 80, 20);
 
-        jFormattedTextField22.addActionListener(new java.awt.event.ActionListener() {
+        gastoAdm.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField22ActionPerformed(evt);
+                gastoAdmActionPerformed(evt);
             }
         });
-        jPanel4.add(jFormattedTextField22);
-        jFormattedTextField22.setBounds(260, 440, 80, 20);
+        jPanel4.add(gastoAdm);
+        gastoAdm.setBounds(260, 440, 80, 20);
 
-        jFormattedTextField23.addActionListener(new java.awt.event.ActionListener() {
+        gastoFinanc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField23ActionPerformed(evt);
+                gastoFinancActionPerformed(evt);
             }
         });
-        jPanel4.add(jFormattedTextField23);
-        jFormattedTextField23.setBounds(260, 470, 80, 20);
+        jPanel4.add(gastoFinanc);
+        gastoFinanc.setBounds(260, 470, 80, 20);
         jPanel4.add(jSeparator8);
         jSeparator8.setBounds(50, 330, 330, 10);
         jPanel4.add(jSeparator10);
         jSeparator10.setBounds(60, 500, 330, 10);
+
+        Calcular.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        Calcular.setText("Calcular");
+        Calcular.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CalcularActionPerformed(evt);
+            }
+        });
+        jPanel4.add(Calcular);
+        Calcular.setBounds(260, 650, 90, 23);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -437,9 +446,9 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
         jPanel2.add(jLabel16);
         jLabel16.setBounds(60, 570, 110, 14);
 
-        jFormattedTextField13.setEditable(false);
-        jPanel2.add(jFormattedTextField13);
-        jFormattedTextField13.setBounds(280, 570, 80, 20);
+        sellingCost.setEditable(false);
+        jPanel2.add(sellingCost);
+        sellingCost.setBounds(280, 570, 80, 20);
 
         jLabel17.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jLabel17.setText("UTILIDAD BRUTA");
@@ -448,9 +457,14 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
         jPanel2.add(jSeparator7);
         jSeparator7.setBounds(200, 610, 240, 10);
 
-        jFormattedTextField14.setEditable(false);
-        jPanel2.add(jFormattedTextField14);
-        jFormattedTextField14.setBounds(280, 620, 80, 20);
+        rawUti.setEditable(false);
+        rawUti.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rawUtiActionPerformed(evt);
+            }
+        });
+        jPanel2.add(rawUti);
+        rawUti.setBounds(280, 620, 80, 20);
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jLabel10.setText("  METODO ABSORBENTE");
@@ -461,11 +475,6 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
         jLabel18.setText("ESTADO DE RESULTADO");
         jPanel2.add(jLabel18);
         jLabel18.setBounds(130, 20, 190, 18);
-
-        jLabel35.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jLabel35.setText("Ventas en unidades");
-        jPanel2.add(jLabel35);
-        jLabel35.setBounds(60, 690, 100, 20);
         jPanel2.add(jLabel36);
         jLabel36.setBounds(70, 690, 0, 0);
         jPanel2.add(jLabel37);
@@ -474,60 +483,52 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
         jLabel38.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jLabel38.setText("Gasto Variable de Venta por unidad");
         jPanel2.add(jLabel38);
-        jLabel38.setBounds(30, 720, 180, 20);
+        jLabel38.setBounds(30, 680, 180, 20);
 
         jLabel39.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jLabel39.setText("GASTO DE OPERACION");
         jPanel2.add(jLabel39);
-        jLabel39.setBounds(40, 800, 140, 14);
-
-        jFormattedTextField29.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField29ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jFormattedTextField29);
-        jFormattedTextField29.setBounds(280, 690, 80, 20);
-        jPanel2.add(jFormattedTextField30);
-        jFormattedTextField30.setBounds(280, 720, 80, 20);
+        jLabel39.setBounds(40, 760, 140, 10);
+        jPanel2.add(var_sellingSpending);
+        var_sellingSpending.setBounds(280, 680, 80, 20);
         jPanel2.add(jSeparator13);
-        jSeparator13.setBounds(230, 780, 180, 10);
+        jSeparator13.setBounds(230, 740, 180, 10);
 
-        jFormattedTextField31.setEditable(false);
-        jFormattedTextField31.addActionListener(new java.awt.event.ActionListener() {
+        operationSpend.setEditable(false);
+        operationSpend.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField31ActionPerformed(evt);
+                operationSpendActionPerformed(evt);
             }
         });
-        jPanel2.add(jFormattedTextField31);
-        jFormattedTextField31.setBounds(280, 800, 80, 20);
+        jPanel2.add(operationSpend);
+        operationSpend.setBounds(280, 760, 80, 20);
 
         jLabel40.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jLabel40.setText("UTILIDAD DE OPERACION");
         jPanel2.add(jLabel40);
-        jLabel40.setBounds(30, 850, 160, 20);
+        jLabel40.setBounds(30, 810, 160, 20);
 
-        jFormattedTextField32.setEditable(false);
-        jFormattedTextField32.addActionListener(new java.awt.event.ActionListener() {
+        operationUti.setEditable(false);
+        operationUti.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField32ActionPerformed(evt);
+                operationUtiActionPerformed(evt);
             }
         });
-        jPanel2.add(jFormattedTextField32);
-        jFormattedTextField32.setBounds(280, 850, 80, 20);
+        jPanel2.add(operationUti);
+        operationUti.setBounds(280, 810, 80, 20);
 
         jLabel25.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jLabel25.setText("Costo Fijo de Administracion");
         jPanel2.add(jLabel25);
-        jLabel25.setBounds(40, 760, 150, 14);
+        jLabel25.setBounds(40, 720, 150, 10);
 
-        jFormattedTextField20.addActionListener(new java.awt.event.ActionListener() {
+        static_AdminCost.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField20ActionPerformed(evt);
+                static_AdminCostActionPerformed(evt);
             }
         });
-        jPanel2.add(jFormattedTextField20);
-        jFormattedTextField20.setBounds(280, 750, 80, 20);
+        jPanel2.add(static_AdminCost);
+        static_AdminCost.setBounds(280, 710, 80, 20);
 
         calcular.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         calcular.setText("Calcular");
@@ -538,7 +539,7 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
             }
         });
         jPanel2.add(calcular);
-        calcular.setBounds(260, 910, 110, 21);
+        calcular.setBounds(260, 870, 110, 20);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -546,15 +547,14 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 446, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(99, Short.MAX_VALUE))
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(95, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 984, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(48, Short.MAX_VALUE))
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 955, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 88, Short.MAX_VALUE))
         );
 
         jScrollPane1.setViewportView(jPanel1);
@@ -611,57 +611,53 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_totalManufCostActionPerformed
 
-    private void jFormattedTextField24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField24ActionPerformed
+    private void invInicial1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_invInicial1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField24ActionPerformed
+    }//GEN-LAST:event_invInicial1ActionPerformed
 
-    private void jFormattedTextField29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField29ActionPerformed
+    private void operationSpendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_operationSpendActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField29ActionPerformed
+    }//GEN-LAST:event_operationSpendActionPerformed
 
-    private void jFormattedTextField31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField31ActionPerformed
+    private void operationUtiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_operationUtiActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField31ActionPerformed
+    }//GEN-LAST:event_operationUtiActionPerformed
 
-    private void jFormattedTextField32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField32ActionPerformed
+    private void gastoOpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gastoOpActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField32ActionPerformed
+    }//GEN-LAST:event_gastoOpActionPerformed
 
-    private void jFormattedTextField33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField33ActionPerformed
+    private void utilidadOperacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_utilidadOperacionActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField33ActionPerformed
+    }//GEN-LAST:event_utilidadOperacionActionPerformed
 
-    private void jFormattedTextField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField15ActionPerformed
+    private void manufTotal1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manufTotal1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField15ActionPerformed
+    }//GEN-LAST:event_manufTotal1ActionPerformed
 
-    private void jFormattedTextField16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField16ActionPerformed
+    private void invFinal1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_invFinal1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField16ActionPerformed
+    }//GEN-LAST:event_invFinal1ActionPerformed
 
-    private void jFormattedTextField18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField18ActionPerformed
+    private void costoDeVentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_costoDeVentasActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField18ActionPerformed
+    }//GEN-LAST:event_costoDeVentasActionPerformed
 
-    private void jFormattedTextField19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField19ActionPerformed
+    private void static_AdminCostActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_static_AdminCostActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField19ActionPerformed
+    }//GEN-LAST:event_static_AdminCostActionPerformed
 
-    private void jFormattedTextField20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField20ActionPerformed
+    private void gastoVentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gastoVentaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField20ActionPerformed
+    }//GEN-LAST:event_gastoVentaActionPerformed
 
-    private void jFormattedTextField21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField21ActionPerformed
+    private void gastoAdmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gastoAdmActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField21ActionPerformed
+    }//GEN-LAST:event_gastoAdmActionPerformed
 
-    private void jFormattedTextField22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField22ActionPerformed
+    private void gastoFinancActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gastoFinancActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField22ActionPerformed
-
-    private void jFormattedTextField23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField23ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField23ActionPerformed
+    }//GEN-LAST:event_gastoFinancActionPerformed
 
     private void static_TotalCostActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_static_TotalCostActionPerformed
         // TODO add your handling code here:
@@ -670,6 +666,26 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
     private void calcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcularActionPerformed
       AccountingMath calculo = new AccountingMath();
       totalSelling.setValue(calculo.Ventas());
+      
+      static_TotalCost.setValue(calculo.costoFijoTotal());
+      
+      manufCost.setValue(calculo.costoArtiManufact());
+      
+      initialInventory.setValue(calculo.inventarioInic());
+      
+      totalManufCost.setValue(calculo.costoManufTotal());
+      
+      invFinal.setValue(calculo.inventarioFinal());
+      
+      sellingCost.setValue(calculo.CostoDeVentas());
+      
+      rawUti.setValue(calculo.utilidadBruta());
+      
+      operationSpend.setValue(calculo.gastoOperacion());
+      
+      operationUti.setValue(calculo.utilidadOperacion());
+      
+      
       
       
       
@@ -683,6 +699,20 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
                     evt.consume();
                 } /*ioexc.... para aceptar numeros*/
     }//GEN-LAST:event_sellingKeyTyped
+
+    private void rawUtiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rawUtiActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rawUtiActionPerformed
+
+    private void CalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CalcularActionPerformed
+        
+        AccountingMath calculo = new AccountingMath();
+        costoDeVentas.setValue(calculo.CostoDeVentas1());
+        UtilidadBruta.setValue(calculo.UtilidadBruta());
+        gastoOp.setValue(calculo.GastoDeOperacion());
+        utilidadOperacion.setValue(calculo.UtilidadOp());
+        
+    }//GEN-LAST:event_CalcularActionPerformed
 
     /**
      * @param args the command line arguments
@@ -727,27 +757,18 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Calcular;
+    public static javax.swing.JFormattedTextField UtilidadBruta;
     private javax.swing.JButton calcular;
+    public static javax.swing.JFormattedTextField costoDeVentas;
+    public static javax.swing.JFormattedTextField gastoAdm;
+    public static javax.swing.JFormattedTextField gastoFinanc;
+    public static javax.swing.JFormattedTextField gastoOp;
+    public static javax.swing.JFormattedTextField gastoVenta;
     public static javax.swing.JFormattedTextField initialInventory;
     public static javax.swing.JFormattedTextField invFinal;
-    public static javax.swing.JFormattedTextField jFormattedTextField13;
-    public static javax.swing.JFormattedTextField jFormattedTextField14;
-    private javax.swing.JFormattedTextField jFormattedTextField15;
-    private javax.swing.JFormattedTextField jFormattedTextField16;
-    private javax.swing.JFormattedTextField jFormattedTextField17;
-    private javax.swing.JFormattedTextField jFormattedTextField18;
-    private javax.swing.JFormattedTextField jFormattedTextField19;
-    public static javax.swing.JFormattedTextField jFormattedTextField20;
-    private javax.swing.JFormattedTextField jFormattedTextField21;
-    private javax.swing.JFormattedTextField jFormattedTextField22;
-    private javax.swing.JFormattedTextField jFormattedTextField23;
-    private javax.swing.JFormattedTextField jFormattedTextField24;
-    private javax.swing.JFormattedTextField jFormattedTextField28;
-    public static javax.swing.JFormattedTextField jFormattedTextField29;
-    public static javax.swing.JFormattedTextField jFormattedTextField30;
-    public static javax.swing.JFormattedTextField jFormattedTextField31;
-    public static javax.swing.JFormattedTextField jFormattedTextField32;
-    private javax.swing.JFormattedTextField jFormattedTextField33;
+    public static javax.swing.JFormattedTextField invFinal1;
+    public static javax.swing.JFormattedTextField invInicial1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -773,7 +794,6 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
@@ -806,13 +826,22 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator9;
     private javax.swing.JTabbedPane jTabbedPane1;
     public static javax.swing.JFormattedTextField manufCost;
+    public static javax.swing.JFormattedTextField manufTotal1;
+    public static javax.swing.JFormattedTextField operationSpend;
+    public static javax.swing.JFormattedTextField operationUti;
     public static javax.swing.JFormattedTextField production;
     public static javax.swing.JFormattedTextField quantityProduct;
+    public static javax.swing.JFormattedTextField rawUti;
     public static javax.swing.JFormattedTextField selling;
+    public static javax.swing.JFormattedTextField selling1;
+    public static javax.swing.JFormattedTextField sellingCost;
+    public static javax.swing.JFormattedTextField static_AdminCost;
     public static javax.swing.JFormattedTextField static_TotalCost;
     public static javax.swing.JFormattedTextField static_UnitCost;
     public static javax.swing.JFormattedTextField totalManufCost;
     public static javax.swing.JFormattedTextField totalSelling;
+    public static javax.swing.JFormattedTextField utilidadOperacion;
     public static javax.swing.JFormattedTextField var_UnitCost;
+    public static javax.swing.JFormattedTextField var_sellingSpending;
     // End of variables declaration//GEN-END:variables
 }

@@ -258,11 +258,11 @@ public class DirectMethodWindow extends javax.swing.JFrame {
 
         jLabel10.setText("  METODO DIRECTO");
         jPanel2.add(jLabel10);
-        jLabel10.setBounds(140, 30, 120, 14);
+        jLabel10.setBounds(160, 30, 120, 14);
 
         jLabel18.setText("ESTADO DE RESULTADO");
         jPanel2.add(jLabel18);
-        jLabel18.setBounds(140, 10, 140, 14);
+        jLabel18.setBounds(150, 10, 140, 14);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -430,7 +430,7 @@ public class DirectMethodWindow extends javax.swing.JFrame {
         jFormattedTextField28.setBounds(285, 580, 80, 20);
 
         jLabel33.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jLabel33.setText("  METODO ABSORBENTE");
+        jLabel33.setText("  METODO DIRECTO");
         jPanel4.add(jLabel33);
         jLabel33.setBounds(150, 30, 150, 14);
 
