@@ -72,7 +72,7 @@ public class MainMenu extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(1000, 750));
         getContentPane().setLayout(null);
         getContentPane().add(calculatorTxtField);
-        calculatorTxtField.setBounds(120, 20, 430, 20);
+        calculatorTxtField.setBounds(120, 20, 430, 22);
 
         worktable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -123,7 +123,7 @@ public class MainMenu extends javax.swing.JFrame {
         jSplitPane1.setRightComponent(saveButton);
 
         getContentPane().add(jSplitPane1);
-        jSplitPane1.setBounds(650, 350, 179, 25);
+        jSplitPane1.setBounds(650, 350, 179, 27);
 
         loadButton.setText("Load");
         jSplitPane2.setLeftComponent(loadButton);
@@ -132,7 +132,7 @@ public class MainMenu extends javax.swing.JFrame {
         jSplitPane2.setRightComponent(deleteButtton);
 
         getContentPane().add(jSplitPane2);
-        jSplitPane2.setBounds(650, 380, 179, 25);
+        jSplitPane2.setBounds(650, 380, 179, 27);
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "f(x):", " " }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
@@ -141,7 +141,7 @@ public class MainMenu extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jComboBox1);
-        jComboBox1.setBounds(60, 20, 56, 20);
+        jComboBox1.setBounds(60, 20, 56, 22);
 
         accountingEntityPanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         accountingEntityPanel.setLayout(new java.awt.GridBagLayout());
