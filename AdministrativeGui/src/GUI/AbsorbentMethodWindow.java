@@ -9,6 +9,7 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
      */
     public AbsorbentMethodWindow() {
         initComponents();
+        jTabbedPane1.setSize(this.getSize());
     }
 
     @SuppressWarnings("unchecked")
@@ -103,6 +104,11 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
         calcular = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentResized(java.awt.event.ComponentEvent evt) {
+                formComponentResized(evt);
+            }
+        });
 
         jPanel4.setLayout(null);
 
@@ -116,6 +122,11 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
                 selling1ActionPerformed(evt);
             }
         });
+        selling1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                selling1KeyTyped(evt);
+            }
+        });
         jPanel4.add(selling1);
         selling1.setBounds(260, 110, 80, 20);
         jPanel4.add(jLabel23);
@@ -126,6 +137,11 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
         invInicial1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 invInicial1ActionPerformed(evt);
+            }
+        });
+        invInicial1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                invInicial1KeyTyped(evt);
             }
         });
         jPanel4.add(invInicial1);
@@ -142,6 +158,8 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
         jLabel32.setBounds(90, 350, 120, 14);
         jPanel4.add(jSeparator12);
         jSeparator12.setBounds(50, 280, 330, 10);
+
+        UtilidadBruta.setEditable(false);
         jPanel4.add(UtilidadBruta);
         UtilidadBruta.setBounds(260, 340, 80, 20);
 
@@ -160,6 +178,7 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
         jPanel4.add(jLabel41);
         jLabel41.setBounds(60, 520, 140, 20);
 
+        gastoOp.setEditable(false);
         gastoOp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 gastoOpActionPerformed(evt);
@@ -175,6 +194,7 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
         jPanel4.add(jLabel9);
         jLabel9.setBounds(60, 590, 170, 20);
 
+        utilidadOperacion.setEditable(false);
         utilidadOperacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 utilidadOperacionActionPerformed(evt);
@@ -203,6 +223,11 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
                 manufTotal1ActionPerformed(evt);
             }
         });
+        manufTotal1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                manufTotal1KeyTyped(evt);
+            }
+        });
         jPanel4.add(manufTotal1);
         manufTotal1.setBounds(260, 210, 80, 20);
 
@@ -211,9 +236,15 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
                 invFinal1ActionPerformed(evt);
             }
         });
+        invFinal1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                invFinal1KeyTyped(evt);
+            }
+        });
         jPanel4.add(invFinal1);
         invFinal1.setBounds(260, 250, 80, 20);
 
+        costoDeVentas.setEditable(false);
         costoDeVentas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 costoDeVentasActionPerformed(evt);
@@ -242,6 +273,11 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
                 gastoVentaActionPerformed(evt);
             }
         });
+        gastoVenta.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                gastoVentaKeyTyped(evt);
+            }
+        });
         jPanel4.add(gastoVenta);
         gastoVenta.setBounds(260, 410, 80, 20);
 
@@ -250,12 +286,22 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
                 gastoAdmActionPerformed(evt);
             }
         });
+        gastoAdm.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                gastoAdmKeyTyped(evt);
+            }
+        });
         jPanel4.add(gastoAdm);
         gastoAdm.setBounds(260, 440, 80, 20);
 
         gastoFinanc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 gastoFinancActionPerformed(evt);
+            }
+        });
+        gastoFinanc.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                gastoFinancKeyTyped(evt);
             }
         });
         jPanel4.add(gastoFinanc);
@@ -286,8 +332,8 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 633, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 410, Short.MAX_VALUE))
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 704, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 339, Short.MAX_VALUE))
         );
 
         jScrollPane2.setViewportView(jPanel3);
@@ -335,6 +381,11 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
                 quantityProductActionPerformed(evt);
             }
         });
+        quantityProduct.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                quantityProductKeyTyped(evt);
+            }
+        });
         jPanel2.add(quantityProduct);
         quantityProduct.setBounds(280, 130, 80, 20);
 
@@ -365,12 +416,23 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
         jLabel6.setText("Costo Fijo Unitario de produccion ");
         jPanel2.add(jLabel6);
         jLabel6.setBounds(20, 290, 170, 20);
+
+        static_UnitCost.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                static_UnitCostKeyTyped(evt);
+            }
+        });
         jPanel2.add(static_UnitCost);
         static_UnitCost.setBounds(280, 220, 80, 20);
 
         production.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 productionActionPerformed(evt);
+            }
+        });
+        production.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                productionKeyTyped(evt);
             }
         });
         jPanel2.add(production);
@@ -391,6 +453,12 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
         jLabel7.setText("Costo variable unitario de produccion");
         jPanel2.add(jLabel7);
         jLabel7.setBounds(10, 330, 190, 14);
+
+        var_UnitCost.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                var_UnitCostKeyTyped(evt);
+            }
+        });
         jPanel2.add(var_UnitCost);
         var_UnitCost.setBounds(280, 330, 80, 20);
         jPanel2.add(jSeparator3);
@@ -432,6 +500,11 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
                 initialInventoryActionPerformed(evt);
             }
         });
+        initialInventory.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                initialInventoryKeyTyped(evt);
+            }
+        });
         jPanel2.add(initialInventory);
         initialInventory.setBounds(280, 470, 80, 20);
 
@@ -440,8 +513,19 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
                 totalManufCostActionPerformed(evt);
             }
         });
+        totalManufCost.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                totalManufCostKeyTyped(evt);
+            }
+        });
         jPanel2.add(totalManufCost);
         totalManufCost.setBounds(280, 500, 80, 20);
+
+        invFinal.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                invFinalKeyTyped(evt);
+            }
+        });
         jPanel2.add(invFinal);
         invFinal.setBounds(280, 530, 80, 20);
         jPanel2.add(jSeparator6);
@@ -495,6 +579,12 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
         jLabel39.setText("GASTO DE OPERACION");
         jPanel2.add(jLabel39);
         jLabel39.setBounds(40, 760, 140, 10);
+
+        var_sellingSpending.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                var_sellingSpendingKeyTyped(evt);
+            }
+        });
         jPanel2.add(var_sellingSpending);
         var_sellingSpending.setBounds(280, 680, 80, 20);
         jPanel2.add(jSeparator13);
@@ -531,6 +621,11 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
         static_AdminCost.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 static_AdminCostActionPerformed(evt);
+            }
+        });
+        static_AdminCost.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                static_AdminCostKeyTyped(evt);
             }
         });
         jPanel2.add(static_AdminCost);
@@ -572,16 +667,14 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(58, 58, 58)
                 .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 479, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(78, Short.MAX_VALUE))
+                .addGap(0, 136, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 545, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(482, Short.MAX_VALUE))
+                .addGap(0, 493, Short.MAX_VALUE))
         );
 
         pack();
@@ -706,6 +799,15 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
                 } /*ioexc.... para aceptar numeros*/
     }//GEN-LAST:event_sellingKeyTyped
 
+    private void sellingUnitCostTxtKeyTyped(java.awt.event.KeyEvent evt) {                                            
+        // TODO add your handling code here:
+        char c=evt.getKeyChar();
+                if((c<'0'||c>'9')&&c!='.')
+                { 
+                    evt.consume();
+                } /*ioexc.... para aceptar numeros*/
+    } 
+    
     private void rawUtiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rawUtiActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rawUtiActionPerformed
@@ -723,6 +825,151 @@ public class AbsorbentMethodWindow extends javax.swing.JFrame {
     private void selling1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selling1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_selling1ActionPerformed
+
+    private void quantityProductKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_quantityProductKeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar();
+                if((c<'0'||c>'9')&&c!='.')
+                { 
+                    evt.consume();
+                } /*ioexc.... para aceptar numeros*/
+    }//GEN-LAST:event_quantityProductKeyTyped
+
+    private void static_UnitCostKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_static_UnitCostKeyTyped
+        char c=evt.getKeyChar();
+                if((c<'0'||c>'9')&&c!='.')
+                { 
+                    evt.consume();
+                } /*ioexc.... para aceptar numeros*/
+    }//GEN-LAST:event_static_UnitCostKeyTyped
+
+    private void productionKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_productionKeyTyped
+        char c=evt.getKeyChar();
+                if((c<'0'||c>'9')&&c!='.')
+                { 
+                    evt.consume();
+                } /*ioexc.... para aceptar numeros*/
+    }//GEN-LAST:event_productionKeyTyped
+
+    private void var_UnitCostKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_var_UnitCostKeyTyped
+        char c=evt.getKeyChar();
+                if((c<'0'||c>'9')&&c!='.')
+                { 
+                    evt.consume();
+                } /*ioexc.... para aceptar numeros*/
+    }//GEN-LAST:event_var_UnitCostKeyTyped
+
+    private void initialInventoryKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_initialInventoryKeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar();
+                if((c<'0'||c>'9')&&c!='.')
+                { 
+                    evt.consume();
+                } /*ioexc.... para aceptar numeros*/
+    }//GEN-LAST:event_initialInventoryKeyTyped
+
+    private void totalManufCostKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_totalManufCostKeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar();
+                if((c<'0'||c>'9')&&c!='.')
+                { 
+                    evt.consume();
+                } /*ioexc.... para aceptar numeros*/
+    }//GEN-LAST:event_totalManufCostKeyTyped
+
+    private void invFinalKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_invFinalKeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar();
+                if((c<'0'||c>'9')&&c!='.')
+                { 
+                    evt.consume();
+                } /*ioexc.... para aceptar numeros*/
+    }//GEN-LAST:event_invFinalKeyTyped
+
+    private void var_sellingSpendingKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_var_sellingSpendingKeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar();
+                if((c<'0'||c>'9')&&c!='.')
+                { 
+                    evt.consume();
+                } /*ioexc.... para aceptar numeros*/
+    }//GEN-LAST:event_var_sellingSpendingKeyTyped
+
+    private void static_AdminCostKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_static_AdminCostKeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar();
+                if((c<'0'||c>'9')&&c!='.')
+                { 
+                    evt.consume();
+                } /*ioexc.... para aceptar numeros*/
+    }//GEN-LAST:event_static_AdminCostKeyTyped
+
+    private void selling1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_selling1KeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar();
+                if((c<'0'||c>'9')&&c!='.')
+                { 
+                    evt.consume();
+                } /*ioexc.... para aceptar numeros*/
+    }//GEN-LAST:event_selling1KeyTyped
+
+    private void invInicial1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_invInicial1KeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar();
+                if((c<'0'||c>'9')&&c!='.')
+                { 
+                    evt.consume();
+                } /*ioexc.... para aceptar numeros*/
+    }//GEN-LAST:event_invInicial1KeyTyped
+
+    private void manufTotal1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_manufTotal1KeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar();
+                if((c<'0'||c>'9')&&c!='.')
+                { 
+                    evt.consume();
+                } /*ioexc.... para aceptar numeros*/
+    }//GEN-LAST:event_manufTotal1KeyTyped
+
+    private void invFinal1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_invFinal1KeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar();
+                if((c<'0'||c>'9')&&c!='.')
+                { 
+                    evt.consume();
+                } /*ioexc.... para aceptar numeros*/
+    }//GEN-LAST:event_invFinal1KeyTyped
+
+    private void gastoVentaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_gastoVentaKeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar();
+                if((c<'0'||c>'9')&&c!='.')
+                { 
+                    evt.consume();
+                } /*ioexc.... para aceptar numeros*/
+    }//GEN-LAST:event_gastoVentaKeyTyped
+
+    private void gastoAdmKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_gastoAdmKeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar();
+                if((c<'0'||c>'9')&&c!='.')
+                { 
+                    evt.consume();
+                } /*ioexc.... para aceptar numeros*/
+    }//GEN-LAST:event_gastoAdmKeyTyped
+
+    private void gastoFinancKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_gastoFinancKeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar();
+                if((c<'0'||c>'9')&&c!='.')
+                { 
+                    evt.consume();
+                } /*ioexc.... para aceptar numeros*/
+    }//GEN-LAST:event_gastoFinancKeyTyped
+
+    private void formComponentResized(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentResized
+        jTabbedPane1.setSize(this.getSize());
+    }//GEN-LAST:event_formComponentResized
 
     /**
      * @param args the command line arguments

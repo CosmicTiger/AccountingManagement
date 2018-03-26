@@ -29,46 +29,6 @@ public class DirectMethodWindow extends javax.swing.JFrame
     private void initComponents() {
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jPanel3 = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jFormattedTextField15 = new javax.swing.JFormattedTextField();
-        jFormattedTextField16 = new javax.swing.JFormattedTextField();
-        jLabel20 = new javax.swing.JLabel();
-        jSeparator5 = new javax.swing.JSeparator();
-        jFormattedTextField17 = new javax.swing.JFormattedTextField();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jFormattedTextField18 = new javax.swing.JFormattedTextField();
-        jFormattedTextField19 = new javax.swing.JFormattedTextField();
-        jSeparator8 = new javax.swing.JSeparator();
-        jFormattedTextField20 = new javax.swing.JFormattedTextField();
-        jLabel25 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
-        jFormattedTextField21 = new javax.swing.JFormattedTextField();
-        jFormattedTextField22 = new javax.swing.JFormattedTextField();
-        jSeparator9 = new javax.swing.JSeparator();
-        jSeparator10 = new javax.swing.JSeparator();
-        jLabel27 = new javax.swing.JLabel();
-        jFormattedTextField23 = new javax.swing.JFormattedTextField();
-        jLabel28 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
-        jLabel30 = new javax.swing.JLabel();
-        jFormattedTextField24 = new javax.swing.JFormattedTextField();
-        jFormattedTextField25 = new javax.swing.JFormattedTextField();
-        jFormattedTextField26 = new javax.swing.JFormattedTextField();
-        jSeparator11 = new javax.swing.JSeparator();
-        jLabel31 = new javax.swing.JLabel();
-        jFormattedTextField27 = new javax.swing.JFormattedTextField();
-        jLabel32 = new javax.swing.JLabel();
-        jSeparator12 = new javax.swing.JSeparator();
-        jFormattedTextField28 = new javax.swing.JFormattedTextField();
-        jLabel33 = new javax.swing.JLabel();
-        jLabel34 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
@@ -116,181 +76,6 @@ public class DirectMethodWindow extends javax.swing.JFrame
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel4.setLayout(null);
-
-        jLabel9.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel9.setText("Ventas");
-        jLabel9.addAncestorListener(new javax.swing.event.AncestorListener() {
-            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
-            }
-            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
-                jLabel9AncestorAdded(evt);
-            }
-            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
-            }
-        });
-        jPanel4.add(jLabel9);
-        jLabel9.setBounds(70, 60, 100, 20);
-
-        jLabel19.setText("Costo de ventas unitario");
-        jPanel4.add(jLabel19);
-        jLabel19.setBounds(30, 90, 130, 20);
-
-        jFormattedTextField15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField15ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jFormattedTextField15);
-        jFormattedTextField15.setBounds(280, 60, 80, 20);
-
-        jFormattedTextField16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField16ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jFormattedTextField16);
-        jFormattedTextField16.setBounds(280, 90, 80, 20);
-
-        jLabel20.setText("VENTAS NETAS");
-        jPanel4.add(jLabel20);
-        jLabel20.setBounds(50, 130, 80, 14);
-        jPanel4.add(jSeparator5);
-        jSeparator5.setBounds(230, 120, 170, 10);
-        jPanel4.add(jFormattedTextField17);
-        jFormattedTextField17.setBounds(280, 130, 80, 20);
-
-        jLabel21.setText("Costo Fijo total de produccion");
-        jPanel4.add(jLabel21);
-        jLabel21.setBounds(20, 180, 160, 14);
-
-        jLabel22.setText("Produccion en unidades");
-        jPanel4.add(jLabel22);
-        jLabel22.setBounds(40, 210, 113, 14);
-        jPanel4.add(jLabel23);
-        jLabel23.setBounds(80, 260, 0, 0);
-
-        jLabel24.setText("Costo Fijo Unitario de produccion ");
-        jPanel4.add(jLabel24);
-        jLabel24.setBounds(20, 250, 170, 20);
-        jPanel4.add(jFormattedTextField18);
-        jFormattedTextField18.setBounds(280, 180, 80, 20);
-
-        jFormattedTextField19.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField19ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jFormattedTextField19);
-        jFormattedTextField19.setBounds(280, 210, 80, 20);
-        jPanel4.add(jSeparator8);
-        jSeparator8.setBounds(240, 240, 160, 10);
-        jPanel4.add(jFormattedTextField20);
-        jFormattedTextField20.setBounds(280, 250, 80, 20);
-
-        jLabel25.setText("Costo variable unitario de produccion");
-        jPanel4.add(jLabel25);
-        jLabel25.setBounds(20, 310, 190, 14);
-
-        jLabel26.setText("Costo Fijo Unitario de produccion ");
-        jPanel4.add(jLabel26);
-        jLabel26.setBounds(30, 340, 170, 14);
-        jPanel4.add(jFormattedTextField21);
-        jFormattedTextField21.setBounds(280, 310, 80, 20);
-        jPanel4.add(jFormattedTextField22);
-        jFormattedTextField22.setBounds(280, 340, 80, 20);
-        jPanel4.add(jSeparator9);
-        jSeparator9.setBounds(240, 372, 140, 0);
-        jPanel4.add(jSeparator10);
-        jSeparator10.setBounds(230, 370, 170, 10);
-
-        jLabel27.setText("Costo de articulos manofacturados");
-        jPanel4.add(jLabel27);
-        jLabel27.setBounds(20, 380, 180, 14);
-
-        jFormattedTextField23.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField23ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jFormattedTextField23);
-        jFormattedTextField23.setBounds(280, 380, 80, 20);
-
-        jLabel28.setText("Inventario Inicial");
-        jPanel4.add(jLabel28);
-        jLabel28.setBounds(70, 440, 100, 14);
-
-        jLabel29.setText("Costo articulos manofacturados");
-        jPanel4.add(jLabel29);
-        jLabel29.setBounds(30, 470, 152, 14);
-
-        jLabel30.setText("Inventario Final");
-        jPanel4.add(jLabel30);
-        jLabel30.setBounds(70, 500, 75, 14);
-
-        jFormattedTextField24.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField24ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jFormattedTextField24);
-        jFormattedTextField24.setBounds(280, 430, 80, 20);
-
-        jFormattedTextField25.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField25ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jFormattedTextField25);
-        jFormattedTextField25.setBounds(280, 460, 80, 20);
-        jPanel4.add(jFormattedTextField26);
-        jFormattedTextField26.setBounds(280, 490, 80, 20);
-        jPanel4.add(jSeparator11);
-        jSeparator11.setBounds(220, 520, 190, 10);
-
-        jLabel31.setText("COSTO DE VENTAS");
-        jPanel4.add(jLabel31);
-        jLabel31.setBounds(60, 530, 110, 14);
-        jPanel4.add(jFormattedTextField27);
-        jFormattedTextField27.setBounds(280, 530, 80, 20);
-
-        jLabel32.setText("UTILIDAD BRUTA");
-        jPanel4.add(jLabel32);
-        jLabel32.setBounds(70, 590, 100, 14);
-        jPanel4.add(jSeparator12);
-        jSeparator12.setBounds(170, 570, 280, 10);
-        jPanel4.add(jFormattedTextField28);
-        jFormattedTextField28.setBounds(285, 580, 80, 20);
-
-        jLabel33.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jLabel33.setText("  METODO DIRECTO");
-        jPanel4.add(jLabel33);
-        jLabel33.setBounds(150, 30, 150, 14);
-
-        jLabel34.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
-        jLabel34.setText("ESTADO DE RESULTADO");
-        jPanel4.add(jLabel34);
-        jLabel34.setBounds(140, 10, 180, 18);
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 446, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 109, Short.MAX_VALUE))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 492, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 551, Short.MAX_VALUE))
-        );
-
-        jScrollPane2.setViewportView(jPanel3);
-
-        jTabbedPane1.addTab("Cifras conocidas", jScrollPane2);
-
         jPanel2.setLayout(null);
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -317,12 +102,22 @@ public class DirectMethodWindow extends javax.swing.JFrame
                 VentasActionPerformed(evt);
             }
         });
+        Ventas.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                VentasKeyTyped(evt);
+            }
+        });
         jPanel2.add(Ventas);
         Ventas.setBounds(300, 120, 80, 20);
 
         CostoUnitVentas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CostoUnitVentasActionPerformed(evt);
+            }
+        });
+        CostoUnitVentas.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CostoUnitVentasKeyTyped(evt);
             }
         });
         jPanel2.add(CostoUnitVentas);
@@ -355,12 +150,23 @@ public class DirectMethodWindow extends javax.swing.JFrame
         jLabel6.setText("Costo Variable Unitario");
         jPanel2.add(jLabel6);
         jLabel6.setBounds(60, 310, 160, 20);
+
+        CostoVarProd.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CostoVarProdKeyTyped(evt);
+            }
+        });
         jPanel2.add(CostoVarProd);
         CostoVarProd.setBounds(300, 240, 80, 20);
 
         CostoVarOp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CostoVarOpActionPerformed(evt);
+            }
+        });
+        CostoVarOp.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CostoVarOpKeyTyped(evt);
             }
         });
         jPanel2.add(CostoVarOp);
@@ -394,6 +200,11 @@ public class DirectMethodWindow extends javax.swing.JFrame
                 InvInicialActionPerformed(evt);
             }
         });
+        InvInicial.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                InvInicialKeyTyped(evt);
+            }
+        });
         jPanel2.add(InvInicial);
         InvInicial.setBounds(300, 370, 80, 20);
 
@@ -402,8 +213,19 @@ public class DirectMethodWindow extends javax.swing.JFrame
                 ArtManufActionPerformed(evt);
             }
         });
+        ArtManuf.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ArtManufKeyTyped(evt);
+            }
+        });
         jPanel2.add(ArtManuf);
         ArtManuf.setBounds(300, 400, 80, 20);
+
+        InvFinal.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                InvFinalKeyTyped(evt);
+            }
+        });
         jPanel2.add(InvFinal);
         InvFinal.setBounds(300, 430, 80, 20);
         jPanel2.add(jSeparator6);
@@ -475,8 +297,19 @@ public class DirectMethodWindow extends javax.swing.JFrame
                 CostoFijoProdActionPerformed(evt);
             }
         });
+        CostoFijoProd.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CostoFijoProdKeyTyped(evt);
+            }
+        });
         jPanel2.add(CostoFijoProd);
         CostoFijoProd.setBounds(300, 590, 80, 20);
+
+        CostoFijoAdm.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CostoFijoAdmKeyTyped(evt);
+            }
+        });
         jPanel2.add(CostoFijoAdm);
         CostoFijoAdm.setBounds(300, 620, 80, 20);
 
@@ -506,14 +339,14 @@ public class DirectMethodWindow extends javax.swing.JFrame
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 446, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 109, Short.MAX_VALUE))
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 492, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 63, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 492, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 551, Short.MAX_VALUE))
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 926, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 117, Short.MAX_VALUE))
         );
 
         jScrollPane1.setViewportView(jPanel1);
@@ -540,70 +373,6 @@ public class DirectMethodWindow extends javax.swing.JFrame
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jLabel4AncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jLabel4AncestorAdded
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel4AncestorAdded
-
-    private void VentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VentasActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_VentasActionPerformed
-
-    private void CostoUnitVentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CostoUnitVentasActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CostoUnitVentasActionPerformed
-
-    private void CostoVarOpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CostoVarOpActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CostoVarOpActionPerformed
-
-    private void InvInicialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InvInicialActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_InvInicialActionPerformed
-
-    private void ArtManufActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ArtManufActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ArtManufActionPerformed
-
-    private void jLabel9AncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jLabel9AncestorAdded
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel9AncestorAdded
-
-    private void jFormattedTextField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField15ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField15ActionPerformed
-
-    private void jFormattedTextField16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField16ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField16ActionPerformed
-
-    private void jFormattedTextField19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField19ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField19ActionPerformed
-
-    private void jFormattedTextField23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField23ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField23ActionPerformed
-
-    private void jFormattedTextField24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField24ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField24ActionPerformed
-
-    private void jFormattedTextField25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField25ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField25ActionPerformed
-
-    private void MargenContrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MargenContrActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_MargenContrActionPerformed
-
-    private void CostoFijoProdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CostoFijoProdActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CostoFijoProdActionPerformed
-
-    private void CostoFijoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CostoFijoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CostoFijoActionPerformed
-
     private void CalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CalcularActionPerformed
         AccountingMath2 met = new AccountingMath2();
         VentasNetas.setValue(met.Ventas());
@@ -612,8 +381,125 @@ public class DirectMethodWindow extends javax.swing.JFrame
         MargenContr.setValue(met.Margen());
         CostoFijo.setValue(met.CostoFijo());
         UtilidadNeta.setValue(met.UtilidadNeta());
-        
+
     }//GEN-LAST:event_CalcularActionPerformed
+
+    private void CostoFijoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CostoFijoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CostoFijoActionPerformed
+
+    private void CostoFijoAdmKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CostoFijoAdmKeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar();
+        if((c<'0'||c>'9')&&c!='.')
+        {
+            evt.consume();
+        } /*ioexc.... para aceptar numeros*/
+    }//GEN-LAST:event_CostoFijoAdmKeyTyped
+
+    private void CostoFijoProdKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CostoFijoProdKeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar();
+        if((c<'0'||c>'9')&&c!='.')
+        {
+            evt.consume();
+        } /*ioexc.... para aceptar numeros*/
+    }//GEN-LAST:event_CostoFijoProdKeyTyped
+
+    private void CostoFijoProdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CostoFijoProdActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CostoFijoProdActionPerformed
+
+    private void MargenContrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MargenContrActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MargenContrActionPerformed
+
+    private void InvFinalKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_InvFinalKeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar();
+        if((c<'0'||c>'9')&&c!='.')
+        {
+            evt.consume();
+        } /*ioexc.... para aceptar numeros*/
+    }//GEN-LAST:event_InvFinalKeyTyped
+
+    private void ArtManufKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ArtManufKeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar();
+        if((c<'0'||c>'9')&&c!='.')
+        {
+            evt.consume();
+        } /*ioexc.... para aceptar numeros*/
+    }//GEN-LAST:event_ArtManufKeyTyped
+
+    private void ArtManufActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ArtManufActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ArtManufActionPerformed
+
+    private void InvInicialKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_InvInicialKeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar();
+        if((c<'0'||c>'9')&&c!='.')
+        {
+            evt.consume();
+        } /*ioexc.... para aceptar numeros*/
+    }//GEN-LAST:event_InvInicialKeyTyped
+
+    private void InvInicialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InvInicialActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_InvInicialActionPerformed
+
+    private void CostoVarOpKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CostoVarOpKeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar();
+        if((c<'0'||c>'9')&&c!='.')
+        {
+            evt.consume();
+        } /*ioexc.... para aceptar numeros*/
+    }//GEN-LAST:event_CostoVarOpKeyTyped
+
+    private void CostoVarOpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CostoVarOpActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CostoVarOpActionPerformed
+
+    private void CostoVarProdKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CostoVarProdKeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar();
+        if((c<'0'||c>'9')&&c!='.')
+        {
+            evt.consume();
+        } /*ioexc.... para aceptar numeros*/
+    }//GEN-LAST:event_CostoVarProdKeyTyped
+
+    private void CostoUnitVentasKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CostoUnitVentasKeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar();
+        if((c<'0'||c>'9')&&c!='.')
+        {
+            evt.consume();
+        } /*ioexc.... para aceptar numeros*/
+    }//GEN-LAST:event_CostoUnitVentasKeyTyped
+
+    private void CostoUnitVentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CostoUnitVentasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CostoUnitVentasActionPerformed
+
+    private void VentasKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_VentasKeyTyped
+        // TODO add your handling code here:
+        char c=evt.getKeyChar();
+        if((c<'0'||c>'9')&&c!='.')
+        {
+            evt.consume();
+        } /*ioexc.... para aceptar numeros*/
+    }//GEN-LAST:event_VentasKeyTyped
+
+    private void VentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VentasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_VentasActionPerformed
+
+    private void jLabel4AncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jLabel4AncestorAdded
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel4AncestorAdded
 
     /**
      * @param args the command line arguments
@@ -674,20 +560,6 @@ public class DirectMethodWindow extends javax.swing.JFrame
     public static javax.swing.JFormattedTextField UtilidadNeta;
     public static javax.swing.JFormattedTextField Ventas;
     public static javax.swing.JFormattedTextField VentasNetas;
-    private javax.swing.JFormattedTextField jFormattedTextField15;
-    private javax.swing.JFormattedTextField jFormattedTextField16;
-    private javax.swing.JFormattedTextField jFormattedTextField17;
-    private javax.swing.JFormattedTextField jFormattedTextField18;
-    private javax.swing.JFormattedTextField jFormattedTextField19;
-    private javax.swing.JFormattedTextField jFormattedTextField20;
-    private javax.swing.JFormattedTextField jFormattedTextField21;
-    private javax.swing.JFormattedTextField jFormattedTextField22;
-    private javax.swing.JFormattedTextField jFormattedTextField23;
-    private javax.swing.JFormattedTextField jFormattedTextField24;
-    private javax.swing.JFormattedTextField jFormattedTextField25;
-    private javax.swing.JFormattedTextField jFormattedTextField26;
-    private javax.swing.JFormattedTextField jFormattedTextField27;
-    private javax.swing.JFormattedTextField jFormattedTextField28;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -698,50 +570,24 @@ public class DirectMethodWindow extends javax.swing.JFrame
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator10;
-    private javax.swing.JSeparator jSeparator11;
-    private javax.swing.JSeparator jSeparator12;
     private javax.swing.JSeparator jSeparator13;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
-    private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JSeparator jSeparator7;
-    private javax.swing.JSeparator jSeparator8;
-    private javax.swing.JSeparator jSeparator9;
     private javax.swing.JTabbedPane jTabbedPane1;
     // End of variables declaration//GEN-END:variables
 
