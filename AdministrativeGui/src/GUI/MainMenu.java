@@ -56,9 +56,6 @@ public class MainMenu extends javax.swing.JFrame {
         accountsTitleLabel = new javax.swing.JLabel();
         AppMenuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenu6 = new javax.swing.JMenu();
-        jMenuItem3 = new javax.swing.JMenuItem();
         editMenu = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
         viewMenu = new javax.swing.JMenu();
@@ -270,22 +267,11 @@ public class MainMenu extends javax.swing.JFrame {
         AppMenuBar.setPreferredSize(new java.awt.Dimension(180, 25));
 
         fileMenu.setText("File");
-
-        jMenuItem1.setText("New file");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+        fileMenu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                fileMenuMouseClicked(evt);
             }
         });
-        fileMenu.add(jMenuItem1);
-
-        jMenu6.setText("Save file as...");
-
-        jMenuItem3.setText("Direct Costing");
-        jMenu6.add(jMenuItem3);
-
-        fileMenu.add(jMenu6);
-
         AppMenuBar.add(fileMenu);
 
         editMenu.setText("Edit");
@@ -327,10 +313,6 @@ public class MainMenu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_accountTxtFieldActionPerformed
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
-
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem2ActionPerformed
@@ -338,6 +320,15 @@ public class MainMenu extends javax.swing.JFrame {
     private void entityNameTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_entityNameTextFieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_entityNameTextFieldActionPerformed
+
+    private void fileMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fileMenuMouseClicked
+        // TODO add your handling code here:
+        fileFrame f = new fileFrame();
+        this.setVisible(false);
+        
+        f.setVisible(true);
+        
+    }//GEN-LAST:event_fileMenuMouseClicked
 
     /**
      * @param args the command line arguments
@@ -396,10 +387,7 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JMenu helpMenu;
     private javax.swing.JComboBox<String> jComboBox1;
     private com.toedter.calendar.JDateChooser jDateChooser1;
-    private javax.swing.JMenu jMenu6;
-    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSplitPane jSplitPane1;
