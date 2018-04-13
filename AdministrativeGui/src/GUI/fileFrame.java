@@ -33,17 +33,17 @@ public class fileFrame extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
-        jLinkButton2 = new com.l2fprod.common.swing.JLinkButton();
-        jLinkButton3 = new com.l2fprod.common.swing.JLinkButton();
-        jLinkButton4 = new com.l2fprod.common.swing.JLinkButton();
-        jLinkButton5 = new com.l2fprod.common.swing.JLinkButton();
-        jLinkButton6 = new com.l2fprod.common.swing.JLinkButton();
-        jLinkButton7 = new com.l2fprod.common.swing.JLinkButton();
+        newFButton = new com.l2fprod.common.swing.JLinkButton();
+        openFButton = new com.l2fprod.common.swing.JLinkButton();
+        saveFButton = new com.l2fprod.common.swing.JLinkButton();
+        saveAsFButton = new com.l2fprod.common.swing.JLinkButton();
+        exportFButton = new com.l2fprod.common.swing.JLinkButton();
+        closeFButton = new com.l2fprod.common.swing.JLinkButton();
         jSeparator1 = new javax.swing.JSeparator();
-        jLinkButton8 = new com.l2fprod.common.swing.JLinkButton();
-        jLinkButton9 = new com.l2fprod.common.swing.JLinkButton();
-        jButton1 = new javax.swing.JButton();
-        jLabel31 = new javax.swing.JLabel();
+        userButton = new com.l2fprod.common.swing.JLinkButton();
+        optionsButton = new com.l2fprod.common.swing.JLinkButton();
+        returnButton = new javax.swing.JButton();
+        infoLabel = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -97,6 +97,7 @@ public class fileFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(800, 600));
+        setPreferredSize(new java.awt.Dimension(1000, 750));
         getContentPane().setLayout(null);
 
         jPanel6.setLayout(new java.awt.GridLayout());
@@ -107,85 +108,85 @@ public class fileFrame extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(102, 102, 102));
         jPanel1.setLayout(null);
 
-        jLinkButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jLinkButton2.setText("New File");
-        jLinkButton2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLinkButton2.addActionListener(new java.awt.event.ActionListener() {
+        newFButton.setForeground(new java.awt.Color(255, 255, 255));
+        newFButton.setText("New File");
+        newFButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        newFButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jLinkButton2ActionPerformed(evt);
+                newFButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(jLinkButton2);
-        jLinkButton2.setBounds(0, 110, 160, 30);
+        jPanel1.add(newFButton);
+        newFButton.setBounds(0, 110, 160, 30);
 
-        jLinkButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jLinkButton3.setText("Open File");
-        jLinkButton3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLinkButton3.addActionListener(new java.awt.event.ActionListener() {
+        openFButton.setForeground(new java.awt.Color(255, 255, 255));
+        openFButton.setText("Open File");
+        openFButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        openFButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jLinkButton3ActionPerformed(evt);
+                openFButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(jLinkButton3);
-        jLinkButton3.setBounds(0, 140, 160, 30);
+        jPanel1.add(openFButton);
+        openFButton.setBounds(0, 140, 160, 30);
 
-        jLinkButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jLinkButton4.setText("Save");
-        jLinkButton4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(jLinkButton4);
-        jLinkButton4.setBounds(2, 180, 160, 25);
+        saveFButton.setForeground(new java.awt.Color(255, 255, 255));
+        saveFButton.setText("Save");
+        saveFButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jPanel1.add(saveFButton);
+        saveFButton.setBounds(2, 180, 160, 25);
 
-        jLinkButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jLinkButton5.setText("Save as");
-        jLinkButton5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(jLinkButton5);
-        jLinkButton5.setBounds(0, 210, 160, 25);
+        saveAsFButton.setForeground(new java.awt.Color(255, 255, 255));
+        saveAsFButton.setText("Save as");
+        saveAsFButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jPanel1.add(saveAsFButton);
+        saveAsFButton.setBounds(0, 210, 160, 25);
 
-        jLinkButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jLinkButton6.setText("Export");
-        jLinkButton6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(jLinkButton6);
-        jLinkButton6.setBounds(0, 240, 160, 25);
+        exportFButton.setForeground(new java.awt.Color(255, 255, 255));
+        exportFButton.setText("Export");
+        exportFButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jPanel1.add(exportFButton);
+        exportFButton.setBounds(0, 240, 160, 25);
 
-        jLinkButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jLinkButton7.setText("Close");
-        jLinkButton7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(jLinkButton7);
-        jLinkButton7.setBounds(0, 270, 160, 25);
+        closeFButton.setForeground(new java.awt.Color(255, 255, 255));
+        closeFButton.setText("Close");
+        closeFButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jPanel1.add(closeFButton);
+        closeFButton.setBounds(0, 270, 160, 25);
         jPanel1.add(jSeparator1);
         jSeparator1.setBounds(20, 300, 120, 10);
 
-        jLinkButton8.setForeground(new java.awt.Color(255, 255, 255));
-        jLinkButton8.setText("User");
-        jLinkButton8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLinkButton8.addActionListener(new java.awt.event.ActionListener() {
+        userButton.setForeground(new java.awt.Color(255, 255, 255));
+        userButton.setText("User");
+        userButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        userButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jLinkButton8ActionPerformed(evt);
+                userButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(jLinkButton8);
-        jLinkButton8.setBounds(0, 320, 160, 30);
+        jPanel1.add(userButton);
+        userButton.setBounds(0, 320, 160, 30);
 
-        jLinkButton9.setForeground(new java.awt.Color(255, 255, 255));
-        jLinkButton9.setText("Options");
-        jLinkButton9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(jLinkButton9);
-        jLinkButton9.setBounds(0, 360, 160, 30);
+        optionsButton.setForeground(new java.awt.Color(255, 255, 255));
+        optionsButton.setText("Options");
+        optionsButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jPanel1.add(optionsButton);
+        optionsButton.setBounds(0, 360, 160, 30);
 
-        jButton1.setText("<-}");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        returnButton.setText("<-}");
+        returnButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                returnButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1);
-        jButton1.setBounds(20, 30, 55, 25);
+        jPanel1.add(returnButton);
+        returnButton.setBounds(20, 30, 55, 25);
 
-        jLabel31.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel31.setText("Información");
-        jPanel1.add(jLabel31);
-        jLabel31.setBounds(-2, 80, 160, 30);
+        infoLabel.setForeground(new java.awt.Color(255, 255, 255));
+        infoLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        infoLabel.setText("Información");
+        jPanel1.add(infoLabel);
+        infoLabel.setBounds(-2, 80, 160, 30);
 
         jPanel7.add(jPanel1);
         jPanel1.setBounds(0, 0, 160, 720);
@@ -194,41 +195,41 @@ public class fileFrame extends javax.swing.JFrame {
         jPanel2.add(jLabel2);
 
         jPanel7.add(jPanel2);
-        jPanel2.setBounds(200, 90, 140, 110);
+        jPanel2.setBounds(210, 140, 140, 110);
 
         jLabel1.setText("Proteger libro");
         jPanel7.add(jLabel1);
-        jLabel1.setBounds(380, 60, 90, 20);
+        jLabel1.setBounds(390, 110, 90, 20);
 
         jLabel3.setText("Comprobar si hay problemas");
         jPanel3.add(jLabel3);
 
         jPanel7.add(jPanel3);
-        jPanel3.setBounds(200, 210, 140, 110);
+        jPanel3.setBounds(210, 260, 140, 110);
 
         jLabel4.setText("Administrar libro");
         jPanel4.add(jLabel4);
 
         jPanel7.add(jPanel4);
-        jPanel4.setBounds(210, 390, 100, 100);
+        jPanel4.setBounds(220, 440, 100, 100);
 
         jLabel5.setText("Opciones de vista de explorador");
         jPanel5.add(jLabel5);
 
         jPanel7.add(jPanel5);
-        jPanel5.setBounds(200, 510, 150, 90);
+        jPanel5.setBounds(210, 560, 150, 90);
 
-        jLabel7.setText("jLabel7");
+        jLabel7.setText("Inspeccionar Libro");
         jPanel7.add(jLabel7);
-        jLabel7.setBounds(380, 210, 41, 16);
+        jLabel7.setBounds(390, 260, 104, 16);
 
-        jLabel9.setText("jLabel9");
+        jLabel9.setText("Administrar libro");
         jPanel7.add(jLabel9);
-        jLabel9.setBounds(380, 340, 41, 16);
+        jLabel9.setBounds(390, 390, 95, 16);
 
-        jLabel11.setText("jLabel11");
+        jLabel11.setText("Opciones de vista de explorador");
         jPanel7.add(jLabel11);
-        jLabel11.setBounds(380, 470, 48, 16);
+        jLabel11.setBounds(390, 520, 183, 16);
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -236,7 +237,7 @@ public class fileFrame extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTextArea1);
 
         jPanel7.add(jScrollPane1);
-        jScrollPane1.setBounds(380, 510, 166, 117);
+        jScrollPane1.setBounds(390, 560, 166, 117);
 
         jTextArea2.setColumns(20);
         jTextArea2.setRows(5);
@@ -244,7 +245,7 @@ public class fileFrame extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jTextArea2);
 
         jPanel7.add(jScrollPane2);
-        jScrollPane2.setBounds(370, 90, 240, 110);
+        jScrollPane2.setBounds(380, 140, 240, 110);
 
         jTextArea3.setColumns(20);
         jTextArea3.setRows(5);
@@ -252,7 +253,7 @@ public class fileFrame extends javax.swing.JFrame {
         jScrollPane3.setViewportView(jTextArea3);
 
         jPanel7.add(jScrollPane3);
-        jScrollPane3.setBounds(370, 240, 230, 100);
+        jScrollPane3.setBounds(380, 290, 230, 100);
 
         jTextArea4.setColumns(20);
         jTextArea4.setRows(5);
@@ -260,19 +261,19 @@ public class fileFrame extends javax.swing.JFrame {
         jScrollPane4.setViewportView(jTextArea4);
 
         jPanel7.add(jScrollPane4);
-        jScrollPane4.setBounds(380, 380, 166, 117);
+        jScrollPane4.setBounds(390, 430, 166, 117);
 
-        jLabel6.setText("jLabel6");
+        jLabel6.setText("Información");
         jPanel7.add(jLabel6);
-        jLabel6.setBounds(180, 30, 41, 16);
+        jLabel6.setBounds(180, 30, 68, 16);
 
-        jLabel8.setText("jLabel8");
+        jLabel8.setText("Nombre Archivo");
         jPanel7.add(jLabel8);
-        jLabel8.setBounds(180, 50, 41, 16);
+        jLabel8.setBounds(180, 50, 91, 16);
 
-        jLabel10.setText("jLabel10");
+        jLabel10.setText("Directorio el cuál se encuentra ubicado");
         jPanel7.add(jLabel10);
-        jLabel10.setBounds(180, 70, 48, 16);
+        jLabel10.setBounds(180, 70, 222, 16);
 
         jLabel12.setText("Tamaño");
         jPanel7.add(jLabel12);
@@ -310,9 +311,9 @@ public class fileFrame extends javax.swing.JFrame {
         jPanel7.add(jLabel20);
         jLabel20.setBounds(740, 400, 128, 16);
 
-        jLabel21.setText("Autor");
+        jLabel21.setText("Autor del Archivo");
         jPanel7.add(jLabel21);
-        jLabel21.setBounds(740, 430, 31, 16);
+        jLabel21.setBounds(740, 430, 110, 16);
 
         jLabel22.setText("Imagen");
         jPanel7.add(jLabel22);
@@ -328,19 +329,19 @@ public class fileFrame extends javax.swing.JFrame {
 
         jLabel24.setText("última modificación realizada");
         jPanel7.add(jLabel24);
-        jLabel24.setBounds(750, 540, 166, 30);
+        jLabel24.setBounds(730, 530, 166, 30);
 
         jLabel25.setText("Documentos relacionados");
         jPanel7.add(jLabel25);
-        jLabel25.setBounds(750, 580, 146, 16);
+        jLabel25.setBounds(730, 580, 146, 16);
 
         jLinkButton10.setText("Abrir ubicación del archivo");
         jPanel7.add(jLinkButton10);
-        jLinkButton10.setBounds(740, 610, 340, 25);
+        jLinkButton10.setBounds(730, 610, 340, 25);
 
         jLabel26.setText("Mostrar todas las propiedades");
         jPanel7.add(jLabel26);
-        jLabel26.setBounds(760, 640, 173, 16);
+        jLabel26.setBounds(740, 640, 173, 16);
 
         jTextField1.setText("Agregar un autor");
         jPanel7.add(jTextField1);
@@ -390,24 +391,24 @@ public class fileFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void returnButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_returnButtonActionPerformed
         // TODO add your handling code here:
         MainMenu m = new MainMenu();
         this.setVisible(false);
         m.setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_returnButtonActionPerformed
 
-    private void jLinkButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jLinkButton3ActionPerformed
+    private void openFButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_openFButtonActionPerformed
         
-    }//GEN-LAST:event_jLinkButton3ActionPerformed
+    }//GEN-LAST:event_openFButtonActionPerformed
 
-    private void jLinkButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jLinkButton8ActionPerformed
+    private void userButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jLinkButton8ActionPerformed
+    }//GEN-LAST:event_userButtonActionPerformed
 
-    private void jLinkButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jLinkButton2ActionPerformed
+    private void newFButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newFButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jLinkButton2ActionPerformed
+    }//GEN-LAST:event_newFButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -446,7 +447,9 @@ public class fileFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private com.l2fprod.common.swing.JLinkButton closeFButton;
+    private com.l2fprod.common.swing.JLinkButton exportFButton;
+    private javax.swing.JLabel infoLabel;
     private javax.swing.JButton jButton2;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
@@ -473,7 +476,6 @@ public class fileFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -481,14 +483,6 @@ public class fileFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private com.l2fprod.common.swing.JLinkButton jLinkButton10;
-    private com.l2fprod.common.swing.JLinkButton jLinkButton2;
-    private com.l2fprod.common.swing.JLinkButton jLinkButton3;
-    private com.l2fprod.common.swing.JLinkButton jLinkButton4;
-    private com.l2fprod.common.swing.JLinkButton jLinkButton5;
-    private com.l2fprod.common.swing.JLinkButton jLinkButton6;
-    private com.l2fprod.common.swing.JLinkButton jLinkButton7;
-    private com.l2fprod.common.swing.JLinkButton jLinkButton8;
-    private com.l2fprod.common.swing.JLinkButton jLinkButton9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -510,5 +504,12 @@ public class fileFrame extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JToggleButton jToggleButton1;
+    private com.l2fprod.common.swing.JLinkButton newFButton;
+    private com.l2fprod.common.swing.JLinkButton openFButton;
+    private com.l2fprod.common.swing.JLinkButton optionsButton;
+    private javax.swing.JButton returnButton;
+    private com.l2fprod.common.swing.JLinkButton saveAsFButton;
+    private com.l2fprod.common.swing.JLinkButton saveFButton;
+    private com.l2fprod.common.swing.JLinkButton userButton;
     // End of variables declaration//GEN-END:variables
 }
