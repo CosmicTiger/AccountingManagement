@@ -8,6 +8,7 @@ import java.awt.Component;
 import java.awt.event.*;
 import java.io.File;
 import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
 import javax.swing.JTable;
 /**
  *
@@ -157,7 +158,7 @@ public class MainMenu extends javax.swing.JFrame {
 
         jPanel3.setLayout(new javax.swing.BoxLayout(jPanel3, javax.swing.BoxLayout.LINE_AXIS));
 
-        coordinatesComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "f(x):", " " }));
+        coordinatesComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " " }));
         coordinatesComboBox.setMinimumSize(new java.awt.Dimension(100, 24));
         coordinatesComboBox.setOpaque(false);
         coordinatesComboBox.setPreferredSize(new java.awt.Dimension(100, 24));
@@ -203,6 +204,14 @@ public class MainMenu extends javax.swing.JFrame {
 
         calculatorTxtField.setOpaque(false);
         calculatorTxtField.setPreferredSize(new java.awt.Dimension(550, 35));
+        calculatorTxtField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                calculatorTxtFieldKeyPressed(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                calculatorTxtFieldKeyTyped(evt);
+            }
+        });
         jPanel1.add(calculatorTxtField, new java.awt.GridBagConstraints());
 
         revealingEcButton.setText("v");
@@ -233,7 +242,8 @@ public class MainMenu extends javax.swing.JFrame {
         editMenu.setBackground(new java.awt.Color(204, 204, 204));
         editMenu.setText("Edición");
 
-        jMenuItem2.setText("Type of Costing");
+        jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.CTRL_MASK));
+        jMenuItem2.setText("Formato de Costeo");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem2ActionPerformed(evt);
@@ -266,6 +276,18 @@ public class MainMenu extends javax.swing.JFrame {
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         // TODO add your handling code here:
+        String message = "Seleccione:\n"
+                + "1. Para Costeo Directo\n"
+                + "2. Para Costeo Absorbente\n";
+        int opc = 0, opcConfirm = 0;
+        
+        do
+        {
+            opc = Integer.parseInt(JOptionPane.showInputDialog(this, message,"Ingrese su opción de Costeo", JOptionPane.QUESTION_MESSAGE));
+            opcConfirm = (int)(JOptionPane.showConfirmDialog(this, "¿Esta seguro de su elección?", "Confirmación de Edicion", JOptionPane.OK_CANCEL_OPTION));
+            
+        }while(opcConfirm!=JOptionPane.OK_OPTION);
+        
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void fileMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fileMenuMouseClicked
@@ -299,9 +321,33 @@ public class MainMenu extends javax.swing.JFrame {
         if (evt.getComponent() == workTable)
         {
             workTable.getCellEditor();
+            String coordinates = "("+workTable.getEditingColumn()+","+workTable.getEditingRow()+")";
+            coordinatesComboBox.getItemAt(1);
+            coordinatesComboBox.addItem(coordinates);
             
+            //if(workTable.getValueAt(workTable.getEditingRow(), workTable.getEditingColumn()) == null)
+            //calculatorTxtField.getText(workTable.getValueAt(workTable.getEditingRow(), workTable.getEditingColumn()));
         }
     }//GEN-LAST:event_workTableMouseClicked
+
+    private void calculatorTxtFieldKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_calculatorTxtFieldKeyTyped
+        // TODO add your handling code here:
+       // do
+       // {
+            if(evt.getKeyChar() <= KeyEvent.VK_0 && evt.getKeyChar() >= KeyEvent.VK_9)
+            {
+                evt.consume();
+            }
+        //}while(evt.getKeyChar() != KeyEvent.VK_ENTER);
+    }//GEN-LAST:event_calculatorTxtFieldKeyTyped
+
+    private void calculatorTxtFieldKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_calculatorTxtFieldKeyPressed
+        // TODO add your handling code here:
+        if(evt.getKeyChar() == KeyEvent.VK_ENTER)//evt.getKeyCode() == evt.VK_ENTER
+        {
+            
+        }
+    }//GEN-LAST:event_calculatorTxtFieldKeyPressed
 
     /**
      * @param args the command line arguments
