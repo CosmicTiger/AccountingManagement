@@ -5,6 +5,8 @@
  */
 package GUI;
 
+import javax.swing.JFileChooser;
+
 /**
  *
  * @author Anabell
@@ -62,34 +64,39 @@ public class fileFrame extends javax.swing.JFrame {
         jLinkButton2.setBounds(0, 112, 240, 40);
 
         jLinkButton3.setText("Open File");
+        jLinkButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jLinkButton3ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jLinkButton3);
-        jLinkButton3.setBounds(0, 150, 86, 24);
+        jLinkButton3.setBounds(0, 150, 88, 25);
 
         jLinkButton4.setText("Save");
         jPanel1.add(jLinkButton4);
-        jLinkButton4.setBounds(0, 180, 60, 24);
+        jLinkButton4.setBounds(0, 180, 62, 25);
 
         jLinkButton5.setText("Save as");
         jPanel1.add(jLinkButton5);
-        jLinkButton5.setBounds(0, 210, 77, 24);
+        jLinkButton5.setBounds(0, 210, 79, 25);
 
         jLinkButton6.setText("Export");
         jPanel1.add(jLinkButton6);
-        jLinkButton6.setBounds(0, 240, 68, 24);
+        jLinkButton6.setBounds(0, 240, 70, 25);
 
         jLinkButton7.setText("Close");
         jPanel1.add(jLinkButton7);
-        jLinkButton7.setBounds(0, 270, 63, 24);
+        jLinkButton7.setBounds(0, 270, 65, 25);
         jPanel1.add(jSeparator1);
         jSeparator1.setBounds(20, 300, 120, 10);
 
         jLinkButton8.setText("User");
         jPanel1.add(jLinkButton8);
-        jLinkButton8.setBounds(10, 320, 58, 24);
+        jLinkButton8.setBounds(10, 320, 60, 25);
 
         jLinkButton9.setText("Options");
         jPanel1.add(jLinkButton9);
-        jLinkButton9.setBounds(10, 350, 101, 24);
+        jLinkButton9.setBounds(10, 350, 101, 25);
 
         jButton1.setText("<-}");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -98,7 +105,7 @@ public class fileFrame extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(20, 30, 53, 25);
+        jButton1.setBounds(20, 30, 55, 25);
 
         jDesktopPane1.add(jPanel1);
         jPanel1.setBounds(0, 0, 160, 660);
@@ -140,6 +147,10 @@ public class fileFrame extends javax.swing.JFrame {
         this.setVisible(false);
         m.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jLinkButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jLinkButton3ActionPerformed
+        
+    }//GEN-LAST:event_jLinkButton3ActionPerformed
 
     /**
      * @param args the command line arguments
